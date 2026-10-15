@@ -150,8 +150,7 @@ def build_index():
   <div class="about__bio" data-reveal>
     <h2 class="section__title" style="margin-bottom:32px">Sobre</h2>
     <p>Sou UX/UI e Product Designer em João Pessoa, na Paraíba, e trabalho com produtos digitais desde 2022.</p>
-    <p>Sou formada em Arquitetura e Urbanismo pela UFCG, com intercâmbio em Sheffield, na Inglaterra. Da arquitetura trouxe o hábito de começar pelo uso: quem vai passar por ali, com que pressa, com que dúvida.</p>
-    <p>Hoje curso Sistemas para Internet no IFPB, e de lá trouxe o olhar de quem constrói: entendo como uma interface vira código, desenho soluções que cabem no que o time consegue entregar e converso com quem desenvolve na mesma língua.</p>
+    <p>Sou formada em Arquitetura e Urbanismo e trago na bagagem do curso o hábito de começar pelo uso: quem vai passar por ali, com que pressa, com que dúvida. Hoje curso Sistemas para Internet e, com isso, tenho o olhar de quem constrói: entendo como uma interface vira código, desenho soluções que cabem no que o time consegue entregar e converso com quem desenvolve na mesma língua.</p>
     <p>No dia a dia, trabalho com pesquisa com usuários, testes de usabilidade, prototipagem de alta fidelidade e design systems, tanto em produtos novos quanto em produtos que já existem e precisam crescer.</p>
     <dl class="facts">
       <div><dt>4</dt><dd>anos de experiência em design de produto</dd></div>
