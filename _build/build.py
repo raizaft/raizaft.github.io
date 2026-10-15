@@ -13,7 +13,7 @@ MEDIUM = "https://medium.com/@raizaft"
 FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
         '<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800'
-        '&family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">')
+        '&family=Inter:opsz,wght@14..32,400..700&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">')
 
 MARQUEE = ["Pesquisa com usuários", "Design de produto", "Serviços públicos", "Design systems",
            "Prototipação", "Testes de usabilidade", "Interfaces web e mobile", "Arquitetura e Urbanismo"]
@@ -171,6 +171,7 @@ def build_index():
     <button class="copy" type="button" data-copy="{EMAIL}">Copiar e-mail</button>
   </div>
   <div class="contact__links" data-reveal>
+    <a class="btn" href="https://www.linkedin.com/in/raizatomazoni/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="{WHATS}" target="_blank" rel="noopener">WhatsApp</a>
     <a class="btn" href="{MEDIUM}" target="_blank" rel="noopener">Medium</a>
   </div>
@@ -182,10 +183,12 @@ def build_index():
 
 def render_media(m):
     kind = m[0]
+    if kind == "html":
+        return f'<div class="figure" data-reveal>{m[1]}</div>'
     if kind == "img":
         _, src, alt, cap = m
         c = f"<figcaption>{e(cap)}</figcaption>" if cap else ""
-        return f'<figure class="figure" data-reveal><div class="figure__frame"><img src="../assets/img/{src}" alt="{e(alt)}" loading="lazy"></div>{c}</figure>'
+        return f'<figure class="figure" data-reveal><a class="figure__frame" href="../assets/img/{src}" target="_blank" rel="noopener" data-cursor="Ampliar"><img src="../assets/img/{src}" alt="{e(alt)}" loading="lazy"></a>{c}</figure>'
     if kind == "scroll":
         _, src, alt, cap = m
         return (f'<figure class="figure" data-reveal><div class="scrollframe" tabindex="0" role="region" aria-label="{e(alt)}, role para ver a página inteira">'
@@ -213,7 +216,7 @@ def build_case(slug, nxt):
   <p class="lede" data-reveal>{e(d['lede'])}</p>
   <dl class="meta" data-reveal>{meta}</dl>
 </div></section>
-<div class="wrap case-cover"><div class="case-cover__frame" data-reveal="clip"><img src="../assets/img/{d['cover']}" alt="{e(d['cover_alt'])}" width="1600" height="900"></div></div>
+<div class="wrap case-cover"><div class="case-cover__frame" data-reveal="clip"><img src="../assets/img/{d.get('case_cover', d['cover'])}" alt="{e(d.get('case_cover_alt', d['cover_alt']))}"></div></div>
 <div class="wrap">
 {''.join(blocks)}
 <a class="next" href="{nxt}.html"><span>Próximo projeto</span><strong>{e(n['title'])}</strong></a>
