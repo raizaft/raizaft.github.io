@@ -224,7 +224,7 @@ PROJECTS = {
     "meta": [
         ("Papel", "UX/UI Designer"),
         ("Cliente", "SUDEMA-PB"),
-        ("Ano", "2024 – 2025"),
+        ("Ano", "2023"),
         ("No ar", '<a href="https://cte.sigma.pb.gov.br" target="_blank" rel="noopener">cte.sigma.pb.gov.br</a>'),
     ],
     "blocks": [
