@@ -219,7 +219,7 @@ def build_case(slug, nxt):
 <div class="wrap case-cover"><div class="case-cover__frame" data-reveal="clip"><img src="../assets/img/{d.get('case_cover', d['cover'])}" alt="{e(d.get('case_cover_alt', d['cover_alt']))}"></div></div>
 <div class="wrap">
 {''.join(blocks)}
-<a class="next" href="{nxt}.html"><span>Próximo projeto</span><strong>{e(n['title'])}</strong></a>
+<a class="next" href="{nxt}.html"><span class="next__in"><span><span class="next__label">Próximo projeto</span><span class="next__name">{e(n['title'])}</span></span><span class="next__arrow" aria-hidden="true">→</span></span></a>
 </div>
 """
     out += foot("../")

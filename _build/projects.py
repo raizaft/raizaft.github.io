@@ -1,5 +1,7 @@
 """Conteúdo dos projetos. Edite aqui e rode `python3 _build/build.py`."""
 
+from styleguides import STYLE_GUIDE_RANGOUT
+
 FEATURED = ["nos-perifericos", "rangout", "cte"]
 MORE = ["sudema-mais", "mapa-das-periferias", "labrua", "supcard"]
 
@@ -177,46 +179,14 @@ PROJECTS = {
             ("img", "rangout-crazy8.webp", "Esboços à mão das telas Explorar, página do restaurante com avaliações e menu Publicar", "Crazy 8's."),
             ("img", "rangout-rabiscoframes.webp", "Folhas com rabiscoframes de login, feed, explorar, mensagens, cadastro, perfil e histórico de saúde", "Rabiscoframes."),
          ]},
-        {"title": "Primeiro teste de usabilidade", "html": """
-<p>No Marvel App, transformamos os rabiscoframes num protótipo interativo de baixa fidelidade e realizamos o primeiro teste de usabilidade, para identificar problemas e pontos de melhoria.</p>
-<p>Pedimos aos participantes que vissem as informações de um restaurante e fizessem uma publicação. Com isso, percebemos que a tela Explorar estava confusa, porque não tinha títulos em cada seção.</p>
-<h3>Fluxo do aplicativo</h3>
-<p>A partir dos rabiscoframes, criamos os wireframes e o fluxo do usuário, para entender melhor o funcionamento e a estrutura do aplicativo.</p>
-"""},
-        {"title": "Identidade visual", "html": """
-<h3>Paleta de cores</h3>
-<p>As cores foram inspiradas numa paleta da natureza, para trazer a referência de uma alimentação saudável e natural.</p>
+        {"title": "Guia de estilo", "html": """
+<p>Para manter as telas consistentes, organizei os estilos e componentes do protótipo num guia: cores, tipografia e os componentes mais usados no app.</p>
+<p>A paleta parte da natureza, para remeter a uma alimentação saudável e natural. A tipografia é a Quicksand, de geometria simples e curvas suaves, que deixa o app legível e amigável.</p>
 """,
-         "media": [
-            ("html", """<div class="swatches">
-  <div class="swatch"><i style="background:#016E74"></i><div><b>Verde-petróleo</b><span>#016E74</span></div></div>
-  <div class="swatch"><i style="background:#F4743B"></i><div><b>Tangerina</b><span>#F4743B</span></div></div>
-  <div class="swatch"><i style="background:#70AE6E"></i><div><b>Verde</b><span>#70AE6E</span></div></div>
-  <div class="swatch"><i style="background:#BEED62"></i><div><b>Verde-limão</b><span>#BEED62</span></div></div>
-</div>"""),
-         ]},
-        {"title": "Tipografia", "html": """
-<p>A tipografia escolhida foi a Quicksand, que tem:</p>
-<ul>
-  <li>geometria simples, que garante boa legibilidade e aparência moderna;</li>
-  <li>traços uniformes, que facilitam a leitura;</li>
-  <li>curvas suaves, que deixam a fonte amigável e convidativa;</li>
-  <li>e ampla variedade de estilos.</li>
-</ul>
-""",
-         "media": [
-            ("html", """<div class="typespec">
-  <div class="typespec__big" aria-hidden="true">Aa</div>
-  <div>
-    <div class="typespec__name">Quicksand</div>
-    <div class="typespec__chars">ABCDEFGHIJKLMNOPQRSTUVWXYZ<br>abcdefghijklmnopqrstuvwxyz<br>0123456789</div>
-    <div class="typespec__weights"><span style="font-weight:400">Regular</span><span style="font-weight:500">Medium</span><span style="font-weight:600">SemiBold</span><span style="font-weight:700">Bold</span></div>
-  </div>
-</div>"""),
-         ]},
+         "media": [("html", STYLE_GUIDE_RANGOUT)]},
         {"title": "Protótipo de alta fidelidade", "html": """
 <p>No protótipo final, o cadastro em etapas monta o perfil da pessoa, com histórico de saúde, outras dietas e temas de interesse, e personaliza o que ela vê. O app reúne feed com publicações e indicações, explorar com pessoas, restaurantes próximos e notícias, mensagens diretas e criação de publicações, recomendações, receitas e artigos.</p>
-<p>A tela Explorar ganhou títulos para cada seção, como apontou o teste de usabilidade.</p>
+<p>A tela Explorar ganhou títulos para cada seção, corrigindo o ponto de confusão encontrado no teste de usabilidade com o protótipo de baixa fidelidade.</p>
 """,
          "media": [
             ("img", "rangout-telas.webp", "Dezoito telas do protótipo de alta fidelidade do Rangout, do login ao feed, explorar, perfil e mensagens", "Telas do protótipo de alta fidelidade."),
