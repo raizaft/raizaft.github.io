@@ -249,10 +249,7 @@ PROJECTS = {
   <li><b>Feedback:</b> o sistema responde de forma clara e imediata a cada ação, para que o usuário saiba sempre o status das operações.</li>
   <li><b>Suporte:</b> páginas de ajuda e formulários de dúvidas facilitam a comunicação entre usuários e equipe técnica.</li>
 </ul>
-""",
-         "media": [
-            ("img", "cte-inicio.webp", "Página inicial com explicação do que é o CTE, quem precisa se cadastrar e botões para acessar, criar conta e consultar", "Página inicial: o que é o cadastro e quem precisa dele vêm antes do login."),
-         ]},
+"""},
         {"title": "Componentes de interface", "html": """
 <ul>
   <li><b>Navegação intuitiva:</b> estrutura clara e hierárquica, que facilita encontrar e acessar as diferentes funcionalidades.</li>
@@ -262,11 +259,7 @@ PROJECTS = {
 </ul>
 <h3>Responsividade</h3>
 <p>O sistema tem design responsivo e se adapta automaticamente a diferentes dispositivos e tamanhos de tela, garantindo uma experiência consistente no computador, no tablet e no celular.</p>
-""",
-         "media": [
-            ("img", "cte-atividades.webp", "Lista de atividades do empreendedor com filtros por licença, atividade e status e menu lateral fixo", "Área do empreendedor: menu lateral fixo, filtros e um aviso que evita cadastros antes da licença."),
-            ("phones", [("cte-mobile.webp", "Lista de atividades no celular com status por cor")], "No celular, a mesma lista com status identificados por cor."),
-         ]},
+"""},
         {"title": "Personas", "html": """
 <p>O CTE atende três perfis com objetivos e rotinas bem diferentes: a empreendedora que precisa se regularizar, o consultor que faz isso por vários clientes e o técnico que administra o sistema.</p>
 """,
@@ -377,8 +370,7 @@ PROJECTS = {
 </ol></details>
 """,
          "media": [
-            ("img", "cte-acoes.webp", "Modal Outras ações listando solicitações que devem ser feitas pelo PBdoc", "Quando uma ação depende de outro sistema, a tela diz qual é e leva até ele."),
-            ("img", "cte-justificativa.webp", "Modal de justificativa no histórico, mostrando qual técnico excluiu a atividade e por quê", "Histórico: o técnico vê quem excluiu uma atividade e a justificativa."),
+            ("img", "cte-telas.webp", "Telas do Cadastro Técnico Estadual em perspectiva: página inicial, inscrição de empreendedor, lista e detalhes de atividades e central de ajuda", "Algumas telas do CTE: página inicial, inscrição, atividades, detalhes da atividade e central de ajuda."),
          ]},
     ],
 },
