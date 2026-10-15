@@ -543,12 +543,12 @@ PROJECTS = {
     "cover_alt": "Topo do site do LabRua com a frase A rua como laboratório sobre fundo amarelo",
     "meta": [
         ("Papel", "UI Designer"),
-        ("Desenvolvimento", "Joan Vitor"),
-        ("Ano", "2025"),
+        ("Cliente", "LabRua"),
+        ("Ano", "2026"),
         ("Páginas", "Início, Nós, Serviços, Portfólio"),
     ],
     "blocks": [
-        {"title": "Contexto", "html": """
+        {"title": "O projeto", "sticky_img": ("labrua-home.webp", "Página inicial completa do site do LabRua: abertura amarela, apresentação do laboratório, eixos de atuação, portfólio, diferenciais e contato"), "html": """
 <p>O LabRua trabalha com planejamento urbano, desenho urbano e regularização fundiária (REURB). O site precisava apresentar uma lista grande de serviços técnicos para prefeituras e comunidades sem perder a energia da marca.</p>
 <p>Esse é um projeto próximo da minha formação em Arquitetura e Urbanismo, o que ajudou a organizar os serviços pela forma como os clientes pensam neles.</p>
 """},
@@ -561,7 +561,6 @@ PROJECTS = {
 </ul>
 """,
          "media": [
-            ("scroll", "labrua-home.webp", "Página inicial completa do site do LabRua", "Página inicial completa. Role dentro do quadro para ver tudo."),
             ("img", "labrua-servicos.webp", "Página de eixos de atuação, alternando azul e roxo com vídeo e descrição", "Página de serviços: cada eixo com vídeo e texto, alternando cores."),
             ("phones", [("labrua-mobile.webp", "Início do site do LabRua no celular")], "Versão para celular."),
          ]},
