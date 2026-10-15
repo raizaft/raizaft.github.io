@@ -69,7 +69,7 @@ PROJECTS = {
     "lede": "Uso do Design de Experiência do Usuário para identificar as necessidades de pessoas com restrições alimentares e criar uma rede social para compartilhar informações seguras e trocar experiências.",
     "tags": ["UX Research", "UX/UI Design", "Branding", "App"],
     "cover": "cover-rangout.webp",
-    "cover_alt": "Três telas do app Rangout: feed, publicação com comentários e mensagens",
+    "cover_alt": "Três celulares com as telas de login, abertura e feed do Rangout, ao lado do logotipo",
     "case_cover": "rangout-mockup.webp",
     "case_cover_alt": "Três celulares com as telas de login, abertura e feed do Rangout, ao lado do logotipo",
     "meta": [
