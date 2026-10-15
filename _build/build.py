@@ -45,7 +45,7 @@ def head(title, desc, prefix, image=None, progress=False):
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 {og}
-<meta name="theme-color" content="#f6f5f1">
+<meta name="theme-color" content="#f3f4f5">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
 {FONT}
 <link rel="stylesheet" href="{prefix}assets/css/style.css?v={V}">

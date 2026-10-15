@@ -2,12 +2,12 @@
    Títulos em Bricolage Grotesque condensada; texto em Inter. Fundo off-white, texto preto. */
 
 :root {
-  --paper: #f6f5f1;
-  --paper-2: #ebe9e3;
+  --paper: #f3f4f5;
+  --paper-2: #e7e9eb;
   --ink: #000;
-  --ink-2: #2b2a27;
-  --muted: #64625c;
-  --line: #d9d6ce;
+  --ink-2: #2a2c2f;
+  --muted: #5f6368;
+  --line: #d6d9dd;
   --cobalt: #2443e0;
   --sun: #ffcc1a;
 
@@ -165,7 +165,7 @@ h1, h2, h3 {
 .contact__row { display: flex; flex-wrap: wrap; align-items: center; gap: 16px; }
 .contact__mail { display: inline-block; font-family: var(--display); font-size: clamp(1.75rem, 6vw, 4.5rem); font-weight: 800; font-variation-settings: "opsz" 96, "wdth" 80; letter-spacing: -0.02em; text-decoration: none; line-height: 1.05; word-break: break-word; background: linear-gradient(var(--cobalt), var(--cobalt)) 0 100% / 100% 4px no-repeat; padding-bottom: 6px; transition: background-size .4s var(--ease), color .3s; }
 .contact__mail:hover { background-size: 100% 100%; color: #fff; }
-.copy { font: inherit; font-size: var(--f-sm); background: none; border: 1.5px solid rgba(246,245,241,.5); color: var(--paper); padding: 9px 16px; border-radius: 999px; cursor: pointer; transition: background .25s, color .25s; }
+.copy { font: inherit; font-size: var(--f-sm); background: none; border: 1.5px solid rgba(243,244,245,.5); color: var(--paper); padding: 9px 16px; border-radius: 999px; cursor: pointer; transition: background .25s, color .25s; }
 .copy:hover { background: var(--paper); color: #000; }
 .contact__links { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 40px; }
 .contact .btn { border-color: var(--paper); color: var(--paper); }
