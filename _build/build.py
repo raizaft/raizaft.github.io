@@ -149,29 +149,51 @@ def build_index():
 <section class="section" id="sobre"><div class="wrap about">
   <div class="about__bio" data-reveal>
     <h2 class="section__title" style="margin-bottom:32px">Sobre</h2>
-    <p>Sou UX/UI Designer e estudante de Sistemas para Internet no IFPB, com formação em Arquitetura e Urbanismo.</p>
-    <p>Da arquitetura trouxe o hábito de começar pelo uso: quem vai passar por ali, com que pressa, com que dúvida. Hoje aplico isso a sistemas de governo e produtos digitais, com pesquisa, prototipação e design systems, e com base de front-end para conversar bem com quem desenvolve.</p>
+    <p>Sou UX/UI e Product Designer em João Pessoa, na Paraíba. Desde 2022 desenho produtos digitais para o setor público, no Governo Federal e no Governo da Paraíba.</p>
+    <p>Sou formada em Arquitetura e Urbanismo pela UFCG, com intercâmbio em Design Arquitetônico e Ambiental na Sheffield Hallam University, e estou cursando Sistemas para Internet no IFPB. Da arquitetura trouxe o hábito de começar pelo uso: quem vai passar por ali, com que pressa, com que dúvida.</p>
+    <p>No dia a dia, trabalho com pesquisa com usuários, testes de usabilidade, prototipação e design systems para produtos que precisam crescer. A base em HTML, CSS e JavaScript me ajuda a conversar bem com quem desenvolve.</p>
+    <dl class="facts">
+      <div><dt>4</dt><dd>anos de experiência em design de produto</dd></div>
+      <div><dt>2</dt><dd>esferas de governo, federal e estadual</dd></div>
+      <div><dt>3</dt><dd>áreas: arquitetura, tecnologia e design</dd></div>
+    </dl>
     <blockquote class="quote">Há um gosto de vitória e encanto na condição de ser simples. Não é preciso muito para ser muito.<cite>Lina Bo Bardi</cite></blockquote>
   </div>
   <div class="timeline" data-reveal>
     <h3>Experiência</h3>
     <ol>
-      <li><time>2024 – hoje</time><div><b>UX Designer</b><span>Secretaria Nacional de Periferias, Ministério das Cidades</span></div></li>
-      <li><time>2022 – hoje</time><div><b>UX Designer</b><span>SUDEMA, Superintendência de Administração do Meio Ambiente da Paraíba</span></div></li>
-      <li><time>2021 – 2022</time><div><b>Arquiteta e Urbanista</b><span>NODA Arquitetura</span></div></li>
-      <li><time>2019 – 2022</time><div><b>Arquiteta e Urbanista</b><span>Oficina Espacial</span></div></li>
+      <li><time>2025 – hoje</time><div><b>UX/UI e Product Designer</b><span>Secretaria Nacional de Periferias, Ministério das Cidades</span><em>Design system, prototipação, UX research e testes de usabilidade</em></div></li>
+      <li><time>2022 – hoje</time><div><b>UX/UI e Product Designer</b><span>SUDEMA, Superintendência de Administração do Meio Ambiente da Paraíba</span><em>Design system, prototipação, UX research e testes de usabilidade</em></div></li>
+      <li><time>2021 – 2022</time><div><b>Arquiteta e Urbanista</b><span>Noda Arquitetura</span><em>Projeto de arquitetura e design de interiores</em></div></li>
+      <li><time>2020 – 2022</time><div><b>Arquiteta e Urbanista</b><span>Oficina Espacial</span><em>Gestão de projeto e projeto de arquitetura</em></div></li>
+      <li><time>2019 – 2020</time><div><b>Designer Gráfica</b><span>Maquinaria</span><em>Direção de arte, conteúdo para redes sociais e mídias físicas</em></div></li>
+    </ol>
+    <h3>Monitorias no IFPB</h3>
+    <ol>
+      <li><time>2025</time><div><b>Programação para Web II</b><span>Instituto Federal da Paraíba</span></div></li>
+      <li><time>2024</time><div><b>Linguagem de Marcação</b><span>Instituto Federal da Paraíba</span></div></li>
+      <li><time>2023</time><div><b>Interação Humano-Máquina</b><span>Instituto Federal da Paraíba</span></div></li>
     </ol>
     <h3>Formação</h3>
     <ol>
-      <li><time>2026</time><div><b>Sistemas para Internet</b><span>IFPB, Instituto Federal da Paraíba</span></div></li>
-      <li><time>2024</time><div><b>UX/UI/Product Design</b><span>UX Unicórnio</span></div></li>
-      <li><time>2019</time><div><b>Arquitetura e Urbanismo</b><span>UFCG, com intercâmbio na Sheffield Hallam University</span></div></li>
+      <li><time>2023 – hoje</time><div><b>Tecnólogo em Sistemas para Internet</b><span>IFPB, Instituto Federal da Paraíba</span></div></li>
+      <li><time>2024</time><div><b>Especialização em UX, UI e Design de Produto</b><span>UX Unicórnio</span></div></li>
+      <li><time>2014 – 2015</time><div><b>Intercâmbio em Architectural and Environmental Design</b><span>Sheffield Hallam University, Reino Unido</span></div></li>
+      <li><time>2011 – 2019</time><div><b>Bacharelado em Arquitetura e Urbanismo</b><span>UFCG, Universidade Federal de Campina Grande</span></div></li>
     </ol>
     <h3>O que eu faço</h3>
     <ul class="skills">
-      <li>Design de produto</li><li>UX Research</li><li>Testes de usabilidade</li><li>Design de interface</li>
-      <li>Design systems</li><li>Prototipação</li><li>Identidade visual</li><li>HTML, CSS e JavaScript</li><li>Figma</li>
+      <li>Design de produto</li><li>Design system</li><li>UX Research</li><li>Testes de usabilidade</li>
+      <li>Prototipação</li><li>Design de interfaces</li><li>Identidade visual</li>
     </ul>
+    <h3 class="timeline__h">Ferramentas</h3>
+    <ul class="skills skills--tools">
+      <li>Figma</li><li>Framer</li><li>Adobe XD</li><li>Balsamiq</li><li>Maze</li><li>Miro</li><li>Illustrator</li><li>Photoshop</li>
+      <li>HTML, CSS e JavaScript</li><li>Bootstrap</li><li>SQL</li><li>Git</li><li>Claude Code</li>
+      <li>Notion</li><li>Jira</li><li>Confluence</li><li>Trello</li><li>ClickUp</li><li>Teams</li>
+    </ul>
+    <h3 class="timeline__h">Como trabalho</h3>
+    <p class="soft">Empatia, pensamento crítico, atenção aos detalhes, curiosidade e colaboração. Gosto de resolver problemas em equipe, com organização, comunicação clara e liderança quando o projeto pede.</p>
   </div>
 </div></section>
 

@@ -375,3 +375,14 @@ h1, h2, h3 {
 .skills li:hover { background: var(--cobalt); border-color: var(--cobalt); color: #fff; }
 .block__body blockquote { border-left-color: var(--cobalt); }
 .story { border-top-color: var(--cobalt); }
+
+/* Sobre: números, detalhes da experiência e ferramentas */
+.facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin: 32px 0 0; padding-top: 20px; border-top: 1px solid var(--line); }
+.facts dt { font-family: var(--display); font-weight: 800; font-variation-settings: "opsz" 96, "wdth" 80; font-size: clamp(2.5rem, 5vw, 3.5rem); line-height: 1; }
+.facts dd { margin: 6px 0 0; font-size: var(--f-sm); color: var(--muted); line-height: 1.4; }
+.timeline em { display: block; font-style: normal; font-size: var(--f-xs); color: var(--muted); margin-top: 4px; }
+.timeline__h { margin-top: 36px !important; }
+.skills + .timeline__h { margin-top: 32px !important; }
+.skills--tools li { background: transparent; }
+.soft { font-size: var(--f-sm); color: var(--ink-2); max-width: 56ch; margin: 0; }
+@media (min-width: 900px) { .about { align-items: start; } .about__bio { position: sticky; top: 96px; } }
