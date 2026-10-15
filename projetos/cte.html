@@ -8,40 +8,43 @@
 <meta property="og:title" content="Cadastro Técnico Estadual — Raiza Tomazoni">
 <meta property="og:description" content="Sistema para empreendedores, consultores e técnicos da SUDEMA registrarem e acompanharem atividades licenciadas, com fluxos pensados para três perfis muito diferentes.">
 <meta property="og:image" content="../assets/img/cover-cte.webp">
+<meta name="theme-color" content="#f6f5f1">
 <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+<div class="progress" aria-hidden="true"></div>
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="nav"><div class="wrap">
-  <a class="nav__name" href="../index.html">Raiza <span>Tomazoni</span></a>
+  <a class="nav__name" href="../index.html">Raiza Tomazoni</a>
   <nav aria-label="Principal"><ul>
-    <li><a href="../index.html#projetos">Projetos</a></li>
-    <li><a href="../index.html#sobre">Sobre</a></li>
-    <li><a href="../index.html#contato">Contato</a></li>
+    <li><a class="u" href="../index.html#projetos">Projetos</a></li>
+    <li><a class="u" href="../index.html#sobre">Sobre</a></li>
+    <li><a class="u" href="../index.html#contato">Contato</a></li>
   </ul></nav>
 </div></header>
 <main id="conteudo">
 
 <section class="case-hero"><div class="wrap">
-  <a class="back" href="../index.html#projetos">Voltar para projetos</a>
-  <h1>Cadastro Técnico Estadual</h1>
-  <p class="lede">Um sistema do governo da Paraíba onde empreendedores registram suas atividades potencialmente poluidoras, vinculam consultores ambientais e emitem o certificado de regularidade, e onde técnicos da SUDEMA acompanham tudo.</p>
-  <dl class="meta"><div><dt>Papel</dt><dd>UX/UI Designer</dd></div><div><dt>Cliente</dt><dd>SUDEMA-PB</dd></div><div><dt>Ano</dt><dd>2024 – 2025</dd></div><div><dt>No ar</dt><dd><a href="https://cte.sigma.pb.gov.br" target="_blank" rel="noopener">cte.sigma.pb.gov.br</a></dd></div></dl>
+  <a class="back" href="../index.html#projetos"><span aria-hidden="true">←</span> Voltar para projetos</a>
+  <h1 data-load><span class="line"><span>Cadastro Técnico Estadual</span></span></h1>
+  <p class="lede" data-reveal>Um sistema do governo da Paraíba onde empreendedores registram suas atividades potencialmente poluidoras, vinculam consultores ambientais e emitem o certificado de regularidade, e onde técnicos da SUDEMA acompanham tudo.</p>
+  <dl class="meta" data-reveal><div><dt>Papel</dt><dd>UX/UI Designer</dd></div><div><dt>Cliente</dt><dd>SUDEMA-PB</dd></div><div><dt>Ano</dt><dd>2024 – 2025</dd></div><div><dt>No ar</dt><dd><a href="https://cte.sigma.pb.gov.br" target="_blank" rel="noopener">cte.sigma.pb.gov.br</a></dd></div></dl>
 </div></section>
-<div class="wrap case-cover"><img src="../assets/img/cover-cte.webp" alt="Página inicial do Cadastro Técnico Estadual sobre uma foto da caatinga paraibana" width="1600" height="900"></div>
+<div class="wrap case-cover"><div class="case-cover__frame" data-reveal="clip"><img src="../assets/img/cover-cte.webp" alt="Página inicial do Cadastro Técnico Estadual sobre uma foto da caatinga paraibana" width="1600" height="900"></div></div>
 <div class="wrap">
-<section class="block"><h2>O problema</h2><div class="block__body">
+<section class="block"><h2 data-reveal>O problema</h2><div class="block__body" data-reveal>
 <p>Quem exerce atividade potencialmente poluidora na Paraíba precisa estar inscrito no Cadastro Técnico Estadual. Na prática, empreendedores tinham dificuldade para registrar suas atividades e para gerenciar os consultores ambientais vinculados à sua conta, e a SUDEMA precisava de mais controle sobre os dados e as ações de cada perfil.</p>
-</div></section><section class="block"><h2>Três perfis, três jornadas</h2><div class="block__body">
+</div></section><section class="block"><h2 data-reveal>Três perfis, três jornadas</h2><div class="block__body" data-reveal>
 <p>O sistema atende pessoas com objetivos e familiaridade com tecnologia muito diferentes. Escrevi personas e histórias de usuário para cada uma:</p>
 <ul>
   <li><b>Empreendedora</b>: registra atividades para obter o certificado de regularidade, aceita ou recusa pedidos de vínculo de consultores e acompanha o histórico da conta, inclusive o que o consultor fez em seu nome.</li>
   <li><b>Consultor</b>: pede vínculo com empreendedores, cadastra atividades por eles e gera certificados.</li>
   <li><b>Técnico da SUDEMA</b>: gerencia contas, vínculos e permissões, e audita o histórico de qualquer empreendedor.</li>
 </ul>
-</div></section><section class="block"><h2>Decisões de design</h2><div class="block__body">
+</div></section><section class="block"><h2 data-reveal>Decisões de design</h2><div class="block__body" data-reveal>
 <h3>Confiança no vínculo</h3>
 <p>Antes de aceitar um consultor, a empreendedora vê os documentos dele. Ninguém age em nome de outra pessoa sem consentimento explícito.</p>
 <h3>Histórico auditável</h3>
@@ -50,7 +53,7 @@
 <p>Campos com descrição, exemplos e validação em tempo real. Quando uma ação depende de outro sistema, como o PBdoc, a tela diz isso e leva até lá, em vez de deixar a pessoa procurar.</p>
 <h3>Um padrão para tudo</h3>
 <p>Navegação hierárquica com menu lateral fixo, botões e links com comportamento consistente, cores e ícones para status e retorno imediato a cada ação. A mesma estrutura funciona no computador, no tablet e no celular.</p>
-</div></section><figure class="figure"><img src="../assets/img/cte-inicio.webp" alt="Página inicial com explicação do que é o CTE, quem precisa se cadastrar e botões para acessar, criar conta e consultar" loading="lazy"><figcaption>O início explica o que é o cadastro e quem precisa dele antes de pedir login.</figcaption></figure><figure class="figure"><img src="../assets/img/cte-atividades.webp" alt="Lista de atividades do empreendedor com filtros por licença, atividade e status" loading="lazy"><figcaption>Atividades com filtros e um aviso que evita cadastros antes da licença.</figcaption></figure><figure class="figure"><img src="../assets/img/cte-acoes.webp" alt="Modal Outras ações listando solicitações que devem ser feitas pelo PBdoc" loading="lazy"><figcaption>Quando a ação é em outro sistema, a tela diz qual e leva até ele.</figcaption></figure><figure class="figure"><img src="../assets/img/cte-justificativa.webp" alt="Modal de justificativa no histórico, mostrando qual técnico excluiu a atividade e por quê" loading="lazy"><figcaption>Histórico auditável: quem fez, quando e por quê.</figcaption></figure><figure class="figure"><div class="phones"><img src="../assets/img/cte-mobile.webp" alt="Lista de atividades no celular com status por cor" loading="lazy"></div><figcaption>Versão para celular com a mesma estrutura.</figcaption></figure><section class="block"><h2>Fluxos principais</h2><div class="block__body">
+</div></section><figure class="figure" data-reveal><div class="figure__frame"><img src="../assets/img/cte-inicio.webp" alt="Página inicial com explicação do que é o CTE, quem precisa se cadastrar e botões para acessar, criar conta e consultar" loading="lazy"></div><figcaption>O início explica o que é o cadastro e quem precisa dele antes de pedir login.</figcaption></figure><figure class="figure" data-reveal><div class="figure__frame"><img src="../assets/img/cte-atividades.webp" alt="Lista de atividades do empreendedor com filtros por licença, atividade e status" loading="lazy"></div><figcaption>Atividades com filtros e um aviso que evita cadastros antes da licença.</figcaption></figure><figure class="figure" data-reveal><div class="figure__frame"><img src="../assets/img/cte-acoes.webp" alt="Modal Outras ações listando solicitações que devem ser feitas pelo PBdoc" loading="lazy"></div><figcaption>Quando a ação é em outro sistema, a tela diz qual e leva até ele.</figcaption></figure><figure class="figure" data-reveal><div class="figure__frame"><img src="../assets/img/cte-justificativa.webp" alt="Modal de justificativa no histórico, mostrando qual técnico excluiu a atividade e por quê" loading="lazy"></div><figcaption>Histórico auditável: quem fez, quando e por quê.</figcaption></figure><figure class="figure" data-reveal><div class="phones"><img src="../assets/img/cte-mobile.webp" alt="Lista de atividades no celular com status por cor" loading="lazy"></div><figcaption>Versão para celular com a mesma estrutura.</figcaption></figure><section class="block"><h2 data-reveal>Fluxos principais</h2><div class="block__body" data-reveal>
 <ul>
   <li><b>Cadastrar atividade</b>: entrar, escolher nova atividade, informar o número da licença, revisar e confirmar.</li>
   <li><b>Emitir certificado</b>: abrir os detalhes da atividade, conferir as informações e gerar o certificado para impressão.</li>
@@ -65,6 +68,6 @@
   <span>© <span id="ano">2026</span> Raiza Tomazoni</span>
   <span>Desenhado e construído em João Pessoa, PB</span>
 </div></footer>
-<script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+<script src="../assets/js/main.js" defer></script>
 </body>
 </html>

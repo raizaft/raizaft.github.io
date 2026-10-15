@@ -11,53 +11,63 @@ MEDIUM = "https://medium.com/@raizaft"
 
 FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
-        '<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">')
+        '<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800'
+        '&family=Inter:opsz,wght@14..32,400..700&display=swap" rel="stylesheet">')
+
+MARQUEE = ["Pesquisa com usuários", "Design de produto", "Serviços públicos", "Design systems",
+           "Prototipação", "Testes de usabilidade", "Interfaces web e mobile", "Arquitetura e Urbanismo"]
+
+e = html.escape
 
 
-def head(title, desc, prefix, image=None):
+def head(title, desc, prefix, image=None, progress=False):
     og = f'<meta property="og:image" content="{prefix}assets/img/{image}">' if image else ""
+    bar = '<div class="progress" aria-hidden="true"></div>' if progress else ""
     return f"""<!doctype html>
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(title)}</title>
-<meta name="description" content="{html.escape(desc)}">
-<meta property="og:title" content="{html.escape(title)}">
-<meta property="og:description" content="{html.escape(desc)}">
+<title>{e(title)}</title>
+<meta name="description" content="{e(desc)}">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:description" content="{e(desc)}">
 {og}
+<meta name="theme-color" content="#f6f5f1">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
 {FONT}
 <link rel="stylesheet" href="{prefix}assets/css/style.css">
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
+{bar}
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="nav"><div class="wrap">
-  <a class="nav__name" href="{prefix}index.html">Raiza <span>Tomazoni</span></a>
+  <a class="nav__name" href="{prefix}index.html">Raiza Tomazoni</a>
   <nav aria-label="Principal"><ul>
-    <li><a href="{prefix}index.html#projetos">Projetos</a></li>
-    <li><a href="{prefix}index.html#sobre">Sobre</a></li>
-    <li><a href="{prefix}index.html#contato">Contato</a></li>
+    <li><a class="u" href="{prefix}index.html#projetos">Projetos</a></li>
+    <li><a class="u" href="{prefix}index.html#sobre">Sobre</a></li>
+    <li><a class="u" href="{prefix}index.html#contato">Contato</a></li>
   </ul></nav>
 </div></header>
 <main id="conteudo">
 """
 
 
-def foot():
-    return """</main>
+def foot(prefix):
+    return f"""</main>
 <footer class="foot"><div class="wrap">
   <span>© <span id="ano">2026</span> Raiza Tomazoni</span>
   <span>Desenhado e construído em João Pessoa, PB</span>
 </div></footer>
-<script>document.getElementById('ano').textContent=new Date().getFullYear();</script>
+<script src="{prefix}assets/js/main.js" defer></script>
 </body>
 </html>
 """
 
 
 def tags(items):
-    return '<ul class="tags">' + "".join(f"<li>{html.escape(t)}</li>" for t in items) + "</ul>"
+    return '<ul class="tags">' + "".join(f"<li>{e(t)}</li>" for t in items) + "</ul>"
 
 
 def build_index():
@@ -67,42 +77,35 @@ def build_index():
         d = p[slug]
         feats.append(f"""
     <a class="feature" href="projetos/{slug}.html">
-      <div class="feature__media"><img src="assets/img/{d['cover']}" alt="{html.escape(d['cover_alt'])}" width="1600" height="900" loading="lazy"></div>
-      <div>
-        <p class="feature__client">{html.escape(d['client'])}</p>
-        <h3 class="feature__title">{html.escape(d['title'])}</h3>
-        <p class="feature__text">{html.escape(d['summary'])}</p>
+      <div class="feature__media" data-reveal="clip" data-cursor="Ver estudo de caso"><img src="assets/img/{d['cover']}" alt="{e(d['cover_alt'])}" width="1600" height="900" loading="lazy"></div>
+      <div data-reveal>
+        <p class="feature__client">{e(d['client'])}</p>
+        <h3 class="feature__title">{e(d['title'])}</h3>
+        <p class="feature__text">{e(d['summary'])}</p>
         {tags(d['tags'])}
-        <span class="feature__more">Ver estudo de caso</span>
+        <span class="feature__more">Ver estudo de caso <i aria-hidden="true"></i></span>
       </div>
     </a>""")
     cards = []
     for slug in MORE:
         d = p[slug]
-        if d.get("cover"):
-            media = f'<div class="card__media"><img src="assets/img/{d["cover"]}" alt="{html.escape(d["cover_alt"])}" width="1600" height="900" loading="lazy"></div>'
-        else:
-            media = f'<div class="card__media card__media--type"><div><strong>{html.escape(d["title"])}</strong><span>{html.escape(d["type_line"])}</span></div></div>'
-        href = f'projetos/{slug}.html' if d.get("page", True) else None
-        tag_open = f'<a class="card" href="{href}">' if href else '<div class="card">'
-        tag_close = "</a>" if href else "</div>"
         cards.append(f"""
-      {tag_open}
-        {media}
-        <h3>{html.escape(d['title'])}</h3>
-        <p>{html.escape(d['card_line'])}</p>
-      {tag_close}""")
+      <a class="card" href="projetos/{slug}.html" data-reveal>
+        <div class="card__media" data-cursor="Ver projeto"><img src="assets/img/{d['cover']}" alt="{e(d['cover_alt'])}" width="1600" height="900" loading="lazy"></div>
+        <h3>{e(d['title'])}</h3>
+        <p>{e(d['card_line'])}</p>
+      </a>""")
+    words = "".join(f"<span>{e(w)}</span>" for w in MARQUEE)
 
     out = head("Raiza Tomazoni — UX/UI e Product Designer",
                "Portfólio de Raiza Tomazoni, designer de produto e UX com formação em Arquitetura e Urbanismo. Projetos para a Secretaria Nacional de Periferias, SUDEMA-PB e outros.",
                "", "cover-nos-perifericos.webp")
     out += f"""
 <section class="hero"><div class="wrap">
-  <h1 class="hero__name" aria-label="Raiza Tomazoni"><span>Raiza</span><span>Tomazoni</span></h1>
-  <div class="cota" aria-hidden="true"><i></i><i></i><b>da arquitetura ao produto digital</b></div>
+  <h1 class="hero__name" data-load aria-label="Raiza Tomazoni"><span class="line" aria-hidden="true"><span>Raiza</span></span><span class="line" aria-hidden="true"><span>Tomazoni</span></span></h1>
   <div class="hero__grid">
-    <p class="hero__lede">Designer de produto e UX. Desenho serviços públicos e produtos digitais que as pessoas conseguem usar sem precisar pedir ajuda.</p>
-    <div>
+    <p class="hero__lede" data-reveal>Designer de produto e UX. Desenho serviços públicos e produtos digitais que as pessoas conseguem usar sem precisar pedir ajuda.</p>
+    <div data-reveal>
       <p class="hero__now">Hoje no <strong>Ministério das Cidades</strong>, na Secretaria Nacional de Periferias, e na <strong>SUDEMA-PB</strong>. Formada em Arquitetura e Urbanismo pela UFCG.</p>
       <div class="hero__cta">
         <a class="btn btn--solid" href="#projetos">Ver projetos</a>
@@ -112,8 +115,10 @@ def build_index():
   </div>
 </div></section>
 
+<div class="marquee" aria-hidden="true"><div class="marquee__track">{words}{words}</div></div>
+
 <section class="section" id="projetos"><div class="wrap">
-  <div class="section__head">
+  <div class="section__head" data-reveal>
     <h2 class="section__title">Projetos</h2>
     <p class="section__note">Estudos de caso completos, com processo, pesquisa e decisões de design.</p>
   </div>
@@ -121,22 +126,22 @@ def build_index():
 </div></section>
 
 <section class="section"><div class="wrap">
-  <div class="section__head">
+  <div class="section__head" data-reveal>
     <h2 class="section__title">Mais trabalhos</h2>
-    <p class="section__note">Sites e interfaces, com foco em UI e identidade visual.</p>
+    <p class="section__note">Apps, sites e interfaces, com foco em UI e identidade visual.</p>
   </div>
   <div class="grid">{''.join(cards)}
   </div>
 </div></section>
 
 <section class="section" id="sobre"><div class="wrap about">
-  <div class="about__bio">
-    <h2 class="section__title" style="margin-bottom:28px">Sobre</h2>
+  <div class="about__bio" data-reveal>
+    <h2 class="section__title" style="margin-bottom:32px">Sobre</h2>
     <p>Sou UX/UI Designer e estudante de Sistemas para Internet no IFPB, com formação em Arquitetura e Urbanismo.</p>
     <p>Da arquitetura trouxe o hábito de começar pelo uso: quem vai passar por ali, com que pressa, com que dúvida. Hoje aplico isso a sistemas de governo e produtos digitais, com pesquisa, prototipação e design systems, e com base de front-end para conversar bem com quem desenvolve.</p>
     <blockquote class="quote">Há um gosto de vitória e encanto na condição de ser simples. Não é preciso muito para ser muito.<cite>Lina Bo Bardi</cite></blockquote>
   </div>
-  <div class="timeline">
+  <div class="timeline" data-reveal>
     <h3>Experiência</h3>
     <ol>
       <li><time>2024 – hoje</time><div><b>UX Designer</b><span>Secretaria Nacional de Periferias, Ministério das Cidades</span></div></li>
@@ -159,26 +164,18 @@ def build_index():
 </div></section>
 
 <section class="section contact" id="contato"><div class="wrap">
-  <h2 class="section__title" style="margin-bottom:28px">Vamos conversar</h2>
-  <div class="contact__row">
+  <h2 class="section__title" data-reveal>Vamos conversar</h2>
+  <div class="contact__row" data-reveal>
     <a class="contact__mail" href="mailto:{EMAIL}">{EMAIL}</a>
     <button class="copy" type="button" data-copy="{EMAIL}">Copiar e-mail</button>
   </div>
-  <div class="contact__links">
+  <div class="contact__links" data-reveal>
     <a class="btn" href="{WHATS}" target="_blank" rel="noopener">WhatsApp</a>
     <a class="btn" href="{MEDIUM}" target="_blank" rel="noopener">Medium</a>
   </div>
 </div></section>
-<script>
-document.querySelectorAll('[data-copy]').forEach(function(b){{
-  b.addEventListener('click',function(){{
-    var t=b.getAttribute('data-copy');
-    (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){{b.textContent='E-mail copiado';setTimeout(function(){{b.textContent='Copiar e-mail'}},2200)}}).catch(function(){{window.location.href='mailto:'+t}});
-  }});
-}});
-</script>
 """
-    out += foot()
+    out += foot("")
     (ROOT / "index.html").write_text(out, encoding="utf-8")
 
 
@@ -186,52 +183,49 @@ def render_media(m):
     kind = m[0]
     if kind == "img":
         _, src, alt, cap = m
-        c = f"<figcaption>{html.escape(cap)}</figcaption>" if cap else ""
-        return f'<figure class="figure"><img src="../assets/img/{src}" alt="{html.escape(alt)}" loading="lazy">{c}</figure>'
+        c = f"<figcaption>{e(cap)}</figcaption>" if cap else ""
+        return f'<figure class="figure" data-reveal><div class="figure__frame"><img src="../assets/img/{src}" alt="{e(alt)}" loading="lazy"></div>{c}</figure>'
     if kind == "scroll":
         _, src, alt, cap = m
-        return (f'<figure class="figure"><div class="scrollframe" tabindex="0" role="region" aria-label="{html.escape(alt)}, role para ver a página inteira">'
-                f'<img src="../assets/img/{src}" alt="{html.escape(alt)}" loading="lazy"></div><figcaption>{html.escape(cap)}</figcaption></figure>')
+        return (f'<figure class="figure" data-reveal><div class="scrollframe" tabindex="0" role="region" aria-label="{e(alt)}, role para ver a página inteira">'
+                f'<img src="../assets/img/{src}" alt="{e(alt)}" loading="lazy"></div><figcaption>{e(cap)}</figcaption></figure>')
     if kind == "phones":
         _, items, cap = m
-        imgs = "".join(f'<img src="../assets/img/{s}" alt="{html.escape(a)}" loading="lazy">' for s, a in items)
-        return f'<figure class="figure"><div class="phones">{imgs}</div><figcaption>{html.escape(cap)}</figcaption></figure>'
+        imgs = "".join(f'<img src="../assets/img/{s}" alt="{e(a)}" loading="lazy">' for s, a in items)
+        return f'<figure class="figure" data-reveal><div class="phones">{imgs}</div><figcaption>{e(cap)}</figcaption></figure>'
     raise ValueError(kind)
 
 
 def build_case(slug, nxt):
     d = PROJECTS[slug]
-    meta = "".join(f"<div><dt>{html.escape(k)}</dt><dd>{v}</dd></div>" for k, v in d["meta"])
+    meta = "".join(f"<div><dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in d["meta"])
     blocks = []
     for b in d["blocks"]:
-        body = b["html"]
         media = "".join(render_media(m) for m in b.get("media", []))
-        blocks.append(f'<section class="block"><h2>{html.escape(b["title"])}</h2><div class="block__body">{body}</div></section>{media}')
+        blocks.append(f'<section class="block"><h2 data-reveal>{e(b["title"])}</h2><div class="block__body" data-reveal>{b["html"]}</div></section>{media}')
     n = PROJECTS[nxt]
-    out = head(f"{d['title']} — Raiza Tomazoni", d["summary"], "../", d.get("cover"))
-    cover = (f'<div class="wrap case-cover"><img src="../assets/img/{d["cover"]}" alt="{html.escape(d["cover_alt"])}" width="1600" height="900"></div>'
-             if d.get("cover") else "")
+    out = head(f"{d['title']} — Raiza Tomazoni", d["summary"], "../", d.get("cover"), progress=True)
     out += f"""
 <section class="case-hero"><div class="wrap">
-  <a class="back" href="../index.html#projetos">Voltar para projetos</a>
-  <h1>{html.escape(d['title'])}</h1>
-  <p class="lede">{html.escape(d['lede'])}</p>
-  <dl class="meta">{meta}</dl>
+  <a class="back" href="../index.html#projetos"><span aria-hidden="true">←</span> Voltar para projetos</a>
+  <h1 data-load><span class="line"><span>{e(d['title'])}</span></span></h1>
+  <p class="lede" data-reveal>{e(d['lede'])}</p>
+  <dl class="meta" data-reveal>{meta}</dl>
 </div></section>
-{cover}
+<div class="wrap case-cover"><div class="case-cover__frame" data-reveal="clip"><img src="../assets/img/{d['cover']}" alt="{e(d['cover_alt'])}" width="1600" height="900"></div></div>
 <div class="wrap">
 {''.join(blocks)}
-<a class="next" href="{nxt}.html"><span>Próximo projeto</span><strong>{html.escape(n['title'])}</strong></a>
+<a class="next" href="{nxt}.html"><span>Próximo projeto</span><strong>{e(n['title'])}</strong></a>
 </div>
 """
-    out += foot()
+    out += foot("../")
     (ROOT / "projetos").mkdir(exist_ok=True)
     (ROOT / "projetos" / f"{slug}.html").write_text(out, encoding="utf-8")
 
 
 if __name__ == "__main__":
     build_index()
-    order = [s for s in FEATURED + MORE if PROJECTS[s].get("page", True)]
+    order = FEATURED + MORE
     for i, s in enumerate(order):
         build_case(s, order[(i + 1) % len(order)])
     print("ok:", ", ".join(order))
