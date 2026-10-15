@@ -226,6 +226,11 @@ def build_case(slug, nxt):
     blocks = []
     for b in d["blocks"]:
         media = "".join(render_media(m) for m in b.get("media", []))
+        if b.get("sticky_img"):
+            src, alt = b["sticky_img"]
+            blocks.append(f'<section class="pin"><div class="pin__text"><h2>{e(b["title"])}</h2><div class="block__body">{b["html"]}</div></div>'
+                          f'<figure class="pin__media"><img src="../assets/img/{src}" alt="{e(alt)}" loading="lazy"></figure></section>{media}')
+            continue
         blocks.append(f'<section class="block"><h2 data-reveal>{e(b["title"])}</h2><div class="block__body" data-reveal>{b["html"]}</div></section>{media}')
     n = PROJECTS[nxt]
     out = head(f"{d['title']} — Raiza Tomazoni", d["summary"], "../", d.get("cover"), progress=True)

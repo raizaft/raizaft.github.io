@@ -428,7 +428,11 @@ PROJECTS = {
     "lede": "A porta de entrada de um portal que reúne investimentos federais, ações da Secretaria e iniciativas das próprias periferias brasileiras.",
     "tags": ["UI Design", "Governo", "Site"],
     "cover": "cover-mapa.webp",
-    "cover_alt": "Homepage do Mapa das Periferias com banner do programa Periferia Sem Risco",
+    "cover_alt": "Notebook apoiado numa mureta exibindo a homepage do Mapa das Periferias, com o logotipo ao lado",
+    "case_cover": "mapa-capa.webp",
+    "case_cover_alt": "Notebook apoiado numa mureta exibindo a homepage do Mapa das Periferias, com o logotipo ao lado",
+    "live": ("https://mapadasperiferias.cidades.gov.br/", "mapadasperiferias.cidades.gov.br"),
+    "live_label": "Conheça o site no ar",
     "meta": [
         ("Papel", "UI Designer"),
         ("Cliente", "Secretaria Nacional de Periferias"),
@@ -436,21 +440,22 @@ PROJECTS = {
         ("No ar", '<a href="https://mapadasperiferias.cidades.gov.br" target="_blank" rel="noopener">mapadasperiferias.cidades.gov.br</a>'),
     ],
     "blocks": [
-        {"title": "Contexto", "html": """
-<p>O Mapa das Periferias reúne dados sobre as áreas periféricas do país: investimentos e obras do Governo Federal, ações feitas pelos próprios territórios, iniciativas reconhecidas pelo Prêmio Periferia Viva e informações coletadas pelo Mapeamento Popular. O portal soma mais de 3 mil iniciativas periféricas cadastradas.</p>
-<p>Com tanto conteúdo, a homepage precisava ajudar cada pessoa a achar o seu caminho sem se perder.</p>
+        {"title": "O projeto", "sticky_img": ("mapa-homepage.webp", "Homepage completa do Mapa das Periferias: números do portal, acesso rápido, O que deseja?, Transformação, Ações e projetos, Notícias e Fique por dentro"), "html": """
+<p>O Mapa das Periferias reúne dados sobre as áreas periféricas do país: investimentos e obras do Governo Federal, ações desenvolvidas pelos próprios territórios, iniciativas premiadas no Prêmio Periferia Viva e informações levantadas pelo Mapeamento Popular.</p>
+<p>Com tanto conteúdo, a homepage precisava ajudar cada pessoa a achar o seu caminho sem se perder. A página prioriza clareza visual, navegação intuitiva, contraste, tipografia e estrutura modular para facilitar a exploração dos dados.</p>
 """},
         {"title": "Decisões", "html": """
 <ul>
-  <li><b>Estrutura modular</b>: blocos independentes para programas, notícias, ações e publicações, cada um com uma função clara.</li>
-  <li><b>Contraste e hierarquia</b>: fundo preto no topo e no bloco de ações, tipografia forte nos títulos e uma faixa de cores da identidade do programa como separador.</li>
-  <li><b>Navegação direta</b>: a busca e o mapa interativo ficam fixos no topo, sempre à mão.</li>
-  <li><b>Dados em linguagem simples</b>: números como os mais de R$ 8 bilhões investidos aparecem com uma frase que explica o que significam.</li>
+  <li><b>Números logo na abertura:</b> mais de 3 mil iniciativas cadastradas, 232 premiadas, 877 ações da Secretaria e R$ 10 bi investidos, cada um com uma frase curta que explica o que significa.</li>
+  <li><b>Caminhos por intenção:</b> a seção “O que deseja?” separa quem quer fortalecer a comunidade, as iniciativas e projetos ou a própria atuação.</li>
+  <li><b>Estrutura modular:</b> blocos independentes para programas, ações e projetos, notícias e cadastro, cada um com uma função clara.</li>
+  <li><b>Identidade como estrutura:</b> as cores do Mapa das Periferias marcam cada seção, e o traço das casas desenhado à mão aparece como textura.</li>
+  <li><b>Navegação direta:</b> a busca e o mapa interativo ficam fixos no topo, sempre à mão.</li>
 </ul>
+<p>O resultado é uma homepage que organiza num só lugar o que antes estava espalhado: dados, programas, notícias e o convite para participar, com acesso rápido aos principais serviços da Secretaria.</p>
 """,
          "media": [
-            ("img", "mapa-home.webp", "Topo da homepage com busca, mapa interativo e banner de programa", ""),
-            ("scroll", "mapa-periferia-viva.webp", "Homepage completa do Mapa das Periferias", "Role dentro do quadro para ver a página inteira."),
+            ("img", "mapa-final.webp", "Composição com telas do Mapa das Periferias: banner Conecte, transforme, fortaleça, cards do Prêmio Periferia Viva e do Mapeamento Popular e a homepage em navegador", ""),
          ]},
     ],
 },
