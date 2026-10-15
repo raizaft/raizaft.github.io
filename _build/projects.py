@@ -220,7 +220,9 @@ PROJECTS = {
     "lede": "Documentação da experiência do usuário no Cadastro Técnico Estadual: as interações, interfaces e fluxos do sistema, pensados para garantir usabilidade, eficiência e satisfação de quem o usa.",
     "tags": ["UX/UI Design", "Governo", "Sistema web", "Responsivo"],
     "cover": "cover-cte.webp",
-    "cover_alt": "Página inicial do Cadastro Técnico Estadual sobre uma foto da caatinga paraibana",
+    "cover_alt": "Notebook sobre a mesa exibindo a página inicial do Cadastro Técnico Estadual, com foto da caatinga paraibana ao fundo",
+    "case_cover": "cte-mockup.webp",
+    "case_cover_alt": "Notebook sobre a mesa exibindo a página inicial do Cadastro Técnico Estadual",
     "meta": [
         ("Papel", "UX/UI Designer"),
         ("Cliente", "SUDEMA-PB"),
