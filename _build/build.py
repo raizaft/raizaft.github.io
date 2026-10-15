@@ -212,6 +212,14 @@ def render_media(m):
     raise ValueError(kind)
 
 
+def live_html(d):
+    if not d.get("live"):
+        return ""
+    url, label = d["live"]
+    return (f'<div class="live" data-reveal><span class="live__label">{e(d.get("live_label", "Veja o projeto no ar"))}</span>'
+            f'<a class="live__link" href="{url}" target="_blank" rel="noopener">{e(label)} <span aria-hidden="true">↗</span></a></div>')
+
+
 def build_case(slug, nxt):
     d = PROJECTS[slug]
     meta = "".join(f"<div><dt>{e(k)}</dt><dd>{v}</dd></div>" for k, v in d["meta"])
@@ -231,6 +239,7 @@ def build_case(slug, nxt):
 <div class="wrap case-cover"><div class="case-cover__frame" data-reveal="clip"><img src="../assets/img/{d.get('case_cover', d['cover'])}" alt="{e(d.get('case_cover_alt', d['cover_alt']))}"></div></div>
 <div class="wrap">
 {''.join(blocks)}
+{live_html(d)}
 <a class="next" href="{nxt}.html"><span class="next__in"><span><span class="next__label">Próximo projeto</span><span class="next__name">{e(n['title'])}</span></span><span class="next__arrow" aria-hidden="true">→</span></span></a>
 </div>
 """

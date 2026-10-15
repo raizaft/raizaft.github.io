@@ -349,3 +349,11 @@ h1, h2, h3 {
 .flow summary:hover { color: var(--cobalt); }
 .flow ol { margin: 0 0 18px; }
 @media (prefers-reduced-motion: no-preference) { .flow[open] ol { animation: flowin .35s var(--ease); } @keyframes flowin { from { opacity: 0; transform: translateY(-6px); } } }
+
+/* Link do projeto no ar, no fim do estudo de caso */
+.live { padding: clamp(8px, 2vw, 16px) 0 clamp(56px, 7vw, 88px); }
+.live__label { display: block; color: var(--muted); font-size: var(--f-sm); margin-bottom: 8px; }
+.live__link { display: inline-flex; align-items: baseline; gap: 12px; font-family: var(--display); font-weight: 800; font-variation-settings: "opsz" 96, "wdth" 85; font-size: clamp(1.75rem, 4.5vw, 3rem); line-height: 1.05; text-decoration: none; word-break: break-word; background: linear-gradient(var(--sun), var(--sun)) 0 100% / 100% 4px no-repeat; padding-bottom: 6px; transition: background-size .4s var(--ease); }
+.live__link span { display: inline-block; font-size: .7em; transition: transform .35s var(--ease); }
+.live__link:hover { background-size: 100% 100%; }
+.live__link:hover span { transform: translate(4px, -4px); }

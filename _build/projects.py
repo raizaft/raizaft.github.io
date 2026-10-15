@@ -222,6 +222,8 @@ PROJECTS = {
     "cover": "cover-cte.webp",
     "cover_alt": "Notebook sobre a mesa exibindo a página inicial do Cadastro Técnico Estadual, com foto da caatinga paraibana ao fundo",
     "case_cover": "cte-mockup.webp",
+    "live": ("https://cte.sigma.pb.gov.br/", "cte.sigma.pb.gov.br"),
+    "live_label": "Conheça o sistema no ar",
     "case_cover_alt": "Notebook sobre a mesa exibindo a página inicial do Cadastro Técnico Estadual",
     "meta": [
         ("Papel", "UX/UI Designer"),
