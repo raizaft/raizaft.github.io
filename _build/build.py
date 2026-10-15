@@ -15,8 +15,7 @@ FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
         '<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800'
         '&family=Inter:opsz,wght@14..32,400..700&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">')
 
-MARQUEE = ["Pesquisa com usuários", "Design de produto", "Serviços públicos", "Design systems",
-           "Prototipação", "Testes de usabilidade", "Interfaces web e mobile", "Arquitetura e Urbanismo"]
+MARQUEE = ["Design System", "Design de interfaces", "Pesquisa com usuários", "Design acessível", "Branding"]
 
 e = html.escape
 
@@ -128,7 +127,7 @@ def build_index():
   </div>
 </div></section>
 
-<div class="marquee" aria-hidden="true"><div class="marquee__track">{words}{words}</div></div>
+<div class="marquee" aria-hidden="true"><div class="marquee__track">{words}{words}{words}{words}</div></div>
 
 <section class="section" id="projetos"><div class="wrap">
   <div class="section__head" data-reveal>
