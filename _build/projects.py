@@ -563,8 +563,15 @@ PROJECTS = {
 </ul>
 """,
          "media": [
-            ("img", "labrua-servicos.webp", "Página de eixos de atuação, alternando azul e roxo com vídeo e descrição", "Página de serviços: cada eixo com vídeo e texto, alternando cores."),
-            ("phones", [("labrua-mobile.webp", "Início do site do LabRua no celular")], "Versão para celular."),
+            ("phones", [
+                ("labrua-m-abertura.webp", "Tela de abertura amarela com o logotipo do LabRua"),
+                ("labrua-m-home.webp", "Início do site no celular com a frase A rua como laboratório"),
+                ("labrua-m-nos.webp", "Página O LabRua com a apresentação da associação"),
+                ("labrua-m-eixos.webp", "Eixos de atuação: Desenho Urbano, Planejamento Urbano e Regional e REURB"),
+                ("labrua-m-equipe.webp", "Página Equipe com diretores, coordenadores e associados voluntários"),
+                ("labrua-m-historia.webp", "Página História com a linha do tempo do laboratório"),
+                ("labrua-m-diferencial.webp", "Página Nosso diferencial com formulário de contato"),
+            ], "Algumas telas da versão para celular. Arraste para o lado para ver todas."),
          ]},
     ],
 },
