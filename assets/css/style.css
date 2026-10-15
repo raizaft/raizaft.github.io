@@ -375,4 +375,3 @@ h1, h2, h3 {
 .skills li:hover { background: var(--cobalt); border-color: var(--cobalt); color: #fff; }
 .block__body blockquote { border-left-color: var(--cobalt); }
 .story { border-top-color: var(--cobalt); }
-.timeline ol { border-top-color: var(--cobalt); }
