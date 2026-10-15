@@ -206,7 +206,6 @@ def build_index():
   <div class="contact__links" data-reveal>
     <a class="btn" href="https://www.linkedin.com/in/raizatomazoni/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="{WHATS}" target="_blank" rel="noopener">WhatsApp</a>
-    <a class="btn" href="{MEDIUM}" target="_blank" rel="noopener">Medium</a>
   </div>
 </div></section>
 """
