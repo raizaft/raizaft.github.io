@@ -20,6 +20,18 @@ MARQUEE = ["Pesquisa com usuários", "Design de produto", "Serviços públicos",
 
 e = html.escape
 
+import hashlib, re as _re
+def bust(page):
+    """Acrescenta ?v=<hash do arquivo> nas imagens, para o navegador baixar a versão nova quando a imagem mudar."""
+    def rep(m):
+        path, ext = m.group(1), m.group(2)
+        f = ROOT / ("assets/img/" + path + ext)
+        if not f.exists():
+            return m.group(0)
+        h = hashlib.md5(f.read_bytes()).hexdigest()[:8]
+        return f"assets/img/{path}{ext}?v={h}"
+    return _re.sub(r'assets/img/([\w\-/]+)(\.(?:webp|png|jpg|svg))(?![?\w])', rep, page)
+
 
 def head(title, desc, prefix, image=None, progress=False):
     og = f'<meta property="og:image" content="{prefix}assets/img/{image}">' if image else ""
@@ -178,7 +190,7 @@ def build_index():
 </div></section>
 """
     out += foot("")
-    (ROOT / "index.html").write_text(out, encoding="utf-8")
+    (ROOT / "index.html").write_text(bust(out), encoding="utf-8")
 
 
 def render_media(m):
@@ -224,7 +236,7 @@ def build_case(slug, nxt):
 """
     out += foot("../")
     (ROOT / "projetos").mkdir(exist_ok=True)
-    (ROOT / "projetos" / f"{slug}.html").write_text(out, encoding="utf-8")
+    (ROOT / "projetos" / f"{slug}.html").write_text(bust(out), encoding="utf-8")
 
 
 if __name__ == "__main__":
