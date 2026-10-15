@@ -97,7 +97,7 @@ h1, h2, h3 {
 /* ——— Faixa em movimento ——— */
 .marquee { border-block: 1px solid var(--line); overflow: hidden; padding: 18px 0; white-space: nowrap; }
 .marquee__track { display: inline-flex; gap: 48px; animation: marquee 38s linear infinite; padding-left: 48px; }
-.marquee__track span { font-family: var(--display); font-weight: 700; font-variation-settings: "opsz" 48, "wdth" 85; font-size: clamp(1.25rem, 2.4vw, 1.75rem); display: inline-flex; align-items: center; gap: 48px; }
+.marquee__track span { font-family: var(--display); font-weight: 300; font-variation-settings: "opsz" 48, "wdth" 85; font-size: clamp(1.25rem, 2.4vw, 1.75rem); display: inline-flex; align-items: center; gap: 48px; }
 .marquee__track span::after { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--cobalt); }
 .marquee:hover .marquee__track { animation-play-state: paused; }
 @keyframes marquee { to { transform: translateX(-50%); } }
