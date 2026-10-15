@@ -241,17 +241,7 @@ PROJECTS = {
   <li><b>Funcionário:</b> vê apenas as vendas do seu terminal, consulta detalhes e comprovantes, mas não vê taxas nem exporta dados.</li>
 </ul>
 <p>Na tela de conta, as permissões de cada perfil ficam listadas com o que está liberado e o que não está, e um aviso explica a quem pedir mudanças. Assim, ninguém fica procurando uma função que não tem.</p>
-""",
-         "media": [
-            ("phones", [
-                ("vitra-perfil.webp", "Conta do lojista com loja ativa, botão de trocar loja e todas as permissões liberadas"),
-                ("vitra-perfil-func.webp", "Conta da funcionária com acesso ao Terminal 1 e permissões restritas marcadas com X"),
-                ("vitra-home-func.webp", "Visão geral da funcionária, só com os dados do Terminal 1 e sem valor líquido"),
-                ("vitra-detalhes-func.webp", "Detalhes da venda vistos pela funcionária, sem o bloco de valores e taxas"),
-                ("vitra-perfil-dark.webp", "Conta do lojista no tema escuro"),
-                ("vitra-perfil-func-dark.webp", "Conta da funcionária no tema escuro, com permissões restritas"),
-            ], "Lojista e funcionária: cada perfil vê só o que pode usar. Arraste para o lado para ver todas."),
-         ]},
+"""},
         {"title": "Decisões de design", "html": """
 <h3>O número que importa primeiro</h3>
 <p>A visão geral abre com o total transacionado e, logo abaixo, o valor líquido e as taxas descontadas. Em seguida vêm as quebras por tipo de venda, bandeira e status, cada uma com barras que mostram a proporção sem precisar ler os números.</p>
@@ -273,16 +263,6 @@ PROJECTS = {
                 ("vitra-exportar.webp", "Painel de exportação com escolha entre CSV e PDF"),
                 ("vitra-trocar-loja.webp", "Painel de troca de loja com o total de cada uma"),
             ], "Visão geral, vendas, detalhes e os painéis de filtro, exportação e troca de loja. Arraste para o lado para ver todas."),
-         ]},
-        {"title": "Todos os estados", "html": """
-<p>Além do caminho ideal, cada tela foi desenhada para quando as coisas não saem como esperado: carregamento com esqueleto da lista, carregamento lento, busca sem resultado e falha de conexão. As mensagens dizem o que aconteceu e o que fazer, e lembram que as vendas estão seguras mesmo quando a lista não carrega.</p>
-""",
-         "media": [
-            ("phones", [
-                ("vitra-carregando.webp", "Lista de vendas carregando, com blocos cinza no lugar dos itens"),
-                ("vitra-erro.webp", "Erro ao carregar as vendas com botão Tentar novamente"),
-                ("vitra-login.webp", "Tela de login com e-mail, senha e entrada por Face ID"),
-            ], "Carregamento, erro de conexão e login."),
          ]},
         {"title": "Claro e escuro", "html": """
 <p>Todas as telas existem nos dois temas. Em vez de inverter as cores, cada token tem um valor próprio para o escuro: o azul de ação fica mais claro, o verde de sucesso mais vivo e as superfícies ganham tons de azul profundo, para manter o contraste e a identidade da marca.</p>
