@@ -1,6 +1,7 @@
 """Gera index.html e as páginas de projeto a partir de projects.py.
 Uso: python3 _build/build.py  (na raiz do repositório)"""
-import html, pathlib, sys
+import html, pathlib, sys, time
+V = str(int(time.time()))
 sys.path.insert(0, str(pathlib.Path(__file__).parent))
 from projects import PROJECTS, FEATURED, MORE
 
@@ -36,7 +37,7 @@ def head(title, desc, prefix, image=None, progress=False):
 <meta name="theme-color" content="#f6f5f1">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
 {FONT}
-<link rel="stylesheet" href="{prefix}assets/css/style.css">
+<link rel="stylesheet" href="{prefix}assets/css/style.css?v={V}">
 <script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
@@ -60,7 +61,7 @@ def foot(prefix):
   <span>© <span id="ano">2026</span> Raiza Tomazoni</span>
   <span>Desenhado e construído em João Pessoa, PB</span>
 </div></footer>
-<script src="{prefix}assets/js/main.js" defer></script>
+<script src="{prefix}assets/js/main.js?v={V}" defer></script>
 </body>
 </html>
 """
