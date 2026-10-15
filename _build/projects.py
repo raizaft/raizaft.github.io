@@ -547,7 +547,7 @@ PROJECTS = {
         ("Papel", "UI Designer"),
         ("Cliente", "LabRua"),
         ("Ano", "2026"),
-        ("Páginas", "Início, Nós, Serviços, Portfólio"),
+        ("No ar", '<a href="https://labrua.org" target="_blank" rel="noopener">labrua.org</a>'),
     ],
     "blocks": [
         {"title": "O projeto", "sticky_img": ("labrua-home.webp", "Página inicial completa do site do LabRua: abertura amarela, apresentação do laboratório, eixos de atuação, portfólio, diferenciais e contato"), "html": """
