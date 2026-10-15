@@ -386,3 +386,16 @@ h1, h2, h3 {
 .skills--tools li { background: transparent; }
 .soft { font-size: var(--f-sm); color: var(--ink-2); max-width: 56ch; margin: 0; }
 @media (min-width: 900px) { .about { align-items: start; } .about__bio { position: sticky; top: 96px; } }
+
+/* Guia de estilo do Vitra */
+.sg--lato { font-family: "Lato", var(--text); }
+.sg-themes { display: grid; gap: 16px; }
+@media (min-width: 820px) { .sg-themes { grid-template-columns: 1fr 1fr; } }
+.sg-theme { border-radius: 12px; padding: 18px; border: 1px solid #e2e6ee; }
+.sg-theme > b { display: block; margin-bottom: 12px; font-size: 1rem; }
+.sg-theme--dark .sg-sw span, .sg-theme--dark .sg-sw small { color: #a9aed0; }
+.sg-theme--dark .sg-sw i { border-color: rgba(255,255,255,.15); }
+.sg-tokens { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; }
+.sg-tokens div { border: 1px solid #eee; border-radius: 10px; padding: 14px 16px; background: #fcfcfc; }
+.sg-tokens b { display: block; font-size: .875rem; }
+.sg-tokens span { font-size: .875rem; color: #6b6b6b; }

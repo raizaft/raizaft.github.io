@@ -13,7 +13,7 @@ MEDIUM = "https://medium.com/@raizaft"
 FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
         '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
         '<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800'
-        '&family=Inter:opsz,wght@14..32,400..700&family=Quicksand:wght@400..700&display=swap" rel="stylesheet">')
+        '&family=Inter:opsz,wght@14..32,400..700&family=Quicksand:wght@400..700&family=Lato:wght@400;700&display=swap" rel="stylesheet">')
 
 MARQUEE = ["Design System", "Design de interfaces", "Pesquisa com usuários", "Design acessível", "Branding"]
 

@@ -100,3 +100,61 @@ STYLE_GUIDE_RANGOUT = f"""
   </section>
 </div>
 """
+
+
+STYLE_GUIDE_VITRA = f"""
+<div class="sg sg--lato">
+  <section class="sg-sec">
+    <h3 class="sg-h">Cores em dois temas</h3>
+    <p class="sg-sub">Os mesmos tokens têm um valor no tema claro e outro no escuro.</p>
+    <div class="sg-themes">
+      <div class="sg-theme" style="background:#f4f6f9;color:#1e222b">
+        <b>Claro</b>
+        <div class="sg-swatches sg-swatches--small">
+          {_sw("Ação primária", "#0070C0", "Botões e links")}
+          {_sw("Texto", "#1E222B", "Texto principal")}
+          {_sw("Sucesso", "#0A7A35", "Aprovada, valor líquido")}
+          {_sw("Erro", "#C0261B", "Negada, alertas")}
+          {_sw("Cartão", "#FFFFFF", "Superfícies")}
+          {_sw("Borda", "#E2E6EE", "Contornos")}
+        </div>
+      </div>
+      <div class="sg-theme sg-theme--dark" style="background:#050435;color:#fff">
+        <b>Escuro</b>
+        <div class="sg-swatches sg-swatches--small">
+          {_sw("Ação primária", "#00A5FF", "Botões e links")}
+          {_sw("Texto", "#FFFFFF", "Texto principal")}
+          {_sw("Sucesso", "#10E656", "Aprovada, valor líquido")}
+          {_sw("Erro", "#FF6B6B", "Negada, alertas")}
+          {_sw("Cartão", "#12114A", "Superfícies")}
+          {_sw("Borda", "#26256E", "Contornos")}
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sg-sec">
+    <h3 class="sg-h">Tipografia</h3>
+    <div class="sg-type">
+      <div class="sg-type__hero">
+        <span class="sg-aa" aria-hidden="true" style="color:#0070C0">Aa</span>
+        <div><b>Lato</b><span>Regular 400, SemiBold 600, Bold 700</span></div>
+      </div>
+      <dl class="sg-scale">
+        <div><dt>Display<small>Bold, 32 px</small></dt><dd style="font-size:32px;font-weight:700">R$ 6.694,39</dd></div>
+        <div><dt>Título H2<small>Bold, 20 px</small></dt><dd style="font-size:20px;font-weight:700">Por tipo de venda</dd></div>
+        <div><dt>Corpo<small>Regular, 16 px</small></dt><dd style="font-size:16px">Crédito, débito e pix da sua loja</dd></div>
+        <div><dt>Corpo médio<small>Regular, 14 px</small></dt><dd style="font-size:14px">52 vendas aprovadas</dd></div>
+        <div><dt>Legenda<small>Regular, 12 px</small></dt><dd style="font-size:12px">Terminal 1</dd></div>
+      </dl>
+    </div>
+  </section>
+  <section class="sg-sec">
+    <h3 class="sg-h">Espaçamento e cantos</h3>
+    <div class="sg-tokens">
+      <div><b>Espaçamento</b><span>4, 8, 12, 16 px</span></div>
+      <div><b>Raios</b><span>4, 8, 12, 16 px e pílula</span></div>
+      <div><b>Borda</b><span>1 px</span></div>
+    </div>
+  </section>
+</div>
+"""

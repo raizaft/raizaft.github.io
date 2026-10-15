@@ -1,15 +1,16 @@
 """Conteúdo dos projetos. Edite aqui e rode `python3 _build/build.py`."""
 
-from styleguides import STYLE_GUIDE_RANGOUT
+from styleguides import STYLE_GUIDE_RANGOUT, STYLE_GUIDE_VITRA
 
-FEATURED = ["nos-perifericos", "rangout", "cte"]
-MORE = ["sudema-mais", "mapa-das-periferias", "labrua", "supcard"]
+FEATURED = ["rangout", "vitra", "labrua"]
+MORE = ["nos-perifericos", "cte", "sudema-mais", "mapa-das-periferias"]
 
 PROJECTS = {
 
 # ————————————————————————————————————————————————————————————————
 "nos-perifericos": {
     "title": "Nós Periféricos e Busca CEP",
+    "card_line": "Plataforma federal para iniciativas das periferias e a busca do CEP oficial de favelas e comunidades.",
     "client": "Secretaria Nacional de Periferias, Ministério das Cidades",
     "summary": "Plataforma criada do zero para iniciativas das periferias encontrarem editais, cursos e oportunidades do governo federal, e a busca que leva o CEP do programa CEP para Todos a quem mora em favelas e comunidades.",
     "lede": "Uma plataforma federal criada do zero para que iniciativas das periferias encontrem editais, cursos e oportunidades, e uma busca que entrega o CEP oficial de favelas e comunidades a partir do nome do lugar onde a pessoa mora.",
@@ -213,8 +214,95 @@ PROJECTS = {
 },
 
 # ————————————————————————————————————————————————————————————————
+"vitra": {
+    "title": "Vitra App",
+    "client": "Confrapag, desafio de design",
+    "card_line": "App para lojistas acompanharem as vendas da maquininha em tempo real, com modo claro e escuro.",
+    "summary": "App para lojistas e funcionários acompanharem em tempo real as vendas da maquininha no crédito, no débito e no pix, com permissões por perfil e modo claro e escuro.",
+    "lede": "Um app para quem tem uma maquininha de cartão acompanhar, em tempo real, tudo o que vendeu no crédito, no débito e no pix, do total do dia ao comprovante de cada venda.",
+    "tags": ["UX/UI Design", "Design System", "App", "Fintech"],
+    "cover": "cover-vitra.webp",
+    "cover_alt": "Três telas do app Vitra: visão geral no tema claro, tela de abertura e visão geral no tema escuro",
+    "meta": [
+        ("Papel", "UX/UI Designer"),
+        ("Cliente", "Confrapag"),
+        ("Ano", "2026"),
+        ("Plataforma", "App mobile, claro e escuro"),
+    ],
+    "blocks": [
+        {"title": "Contexto", "html": """
+<p>O Vitra é o app da Confrapag para lojistas que usam suas maquininhas de cartão. Neste desafio de design, desenhei o módulo Gestor de vendas: o lugar onde a pessoa vê, em tempo real, o que vendeu no crédito, no débito e no pix, em uma ou em várias lojas.</p>
+<p>Os requisitos vieram prontos no briefing e o prazo era curto, sem etapa de descoberta. Por isso, concentrei o trabalho em organizar bem a informação, cobrir os estados de cada tela e construir uma base consistente de componentes.</p>
+"""},
+        {"title": "Dois perfis, o mesmo app", "html": """
+<p>O app atende dois tipos de pessoa com necessidades diferentes, e cada uma vê só o que faz sentido para ela:</p>
+<ul>
+  <li><b>Lojista:</b> vê as vendas de todos os terminais, o valor líquido e as taxas descontadas, exporta relatórios e troca entre as lojas que administra.</li>
+  <li><b>Funcionário:</b> vê apenas as vendas do seu terminal, consulta detalhes e comprovantes, mas não vê taxas nem exporta dados.</li>
+</ul>
+<p>Na tela de conta, as permissões de cada perfil ficam listadas com o que está liberado e o que não está, e um aviso explica a quem pedir mudanças. Assim, ninguém fica procurando uma função que não tem.</p>
+""",
+         "media": [
+            ("phones", [
+                ("vitra-perfil.webp", "Conta do lojista com loja ativa, botão de trocar loja e todas as permissões liberadas"),
+                ("vitra-perfil-func.webp", "Conta da funcionária com acesso ao Terminal 1 e permissões restritas marcadas com X"),
+                ("vitra-home-func.webp", "Visão geral da funcionária, só com os dados do Terminal 1 e sem valor líquido"),
+            ], "Lojista e funcionária: cada perfil vê só o que pode usar."),
+         ]},
+        {"title": "Decisões de design", "html": """
+<h3>O número que importa primeiro</h3>
+<p>A visão geral abre com o total transacionado e, logo abaixo, o valor líquido e as taxas descontadas. Em seguida vêm as quebras por tipo de venda, bandeira e status, cada uma com barras que mostram a proporção sem precisar ler os números.</p>
+<h3>Período sempre à vista</h3>
+<p>Os atalhos Hoje, 7 dias, 30 dias e Personalizado ficam no topo das telas de visão geral e de vendas, para que a pessoa saiba sempre de que período são os valores.</p>
+<h3>Vendas que se leem rápido</h3>
+<p>A lista agrupa as vendas por dia, com o total de cada dia. Cada venda mostra tipo, bandeira, parcelas, horário, terminal e o status com cor e ícone. Vendas negadas aparecem com o valor riscado, para não serem confundidas com dinheiro recebido.</p>
+<h3>Detalhes prontos para o suporte</h3>
+<p>O detalhe da venda separa valores de dados da transação, e o NSU e o ID da transação têm botão de copiar, porque são as informações que o lojista mais repassa ao atendimento. O comprovante pode ser compartilhado direto da tela.</p>
+<h3>Ações em painéis inferiores</h3>
+<p>Filtros, ordenação, exportação e troca de loja abrem em painéis que sobem da parte de baixo da tela, ao alcance do polegar e sem tirar a pessoa da lista. O botão de aplicar filtros já diz quantas vendas vão aparecer.</p>
+""",
+         "media": [
+            ("phones", [
+                ("vitra-home.webp", "Visão geral do lojista com total transacionado, valor líquido e taxas"),
+                ("vitra-vendas.webp", "Lista de vendas agrupada por dia, com status aprovada ou negada"),
+                ("vitra-detalhes.webp", "Detalhes da venda com valores, dados da transação e botões de copiar"),
+                ("vitra-filtros.webp", "Painel de filtros por tipo, status, bandeira e terminal"),
+                ("vitra-exportar.webp", "Painel de exportação com escolha entre CSV e PDF"),
+                ("vitra-trocar-loja.webp", "Painel de troca de loja com o total de cada uma"),
+            ], "Visão geral, vendas, detalhes e os painéis de filtro, exportação e troca de loja. Arraste para o lado para ver todas."),
+         ]},
+        {"title": "Todos os estados", "html": """
+<p>Além do caminho ideal, cada tela foi desenhada para quando as coisas não saem como esperado: carregamento com esqueleto da lista, carregamento lento, busca sem resultado e falha de conexão. As mensagens dizem o que aconteceu e o que fazer, e lembram que as vendas estão seguras mesmo quando a lista não carrega.</p>
+""",
+         "media": [
+            ("phones", [
+                ("vitra-carregando.webp", "Lista de vendas carregando, com blocos cinza no lugar dos itens"),
+                ("vitra-erro.webp", "Erro ao carregar as vendas com botão Tentar novamente"),
+                ("vitra-login.webp", "Tela de login com e-mail, senha e entrada por Face ID"),
+            ], "Carregamento, erro de conexão e login."),
+         ]},
+        {"title": "Claro e escuro", "html": """
+<p>Todas as telas existem nos dois temas. Em vez de inverter as cores, cada token tem um valor próprio para o escuro: o azul de ação fica mais claro, o verde de sucesso mais vivo e as superfícies ganham tons de azul profundo, para manter o contraste e a identidade da marca.</p>
+""",
+         "media": [
+            ("phones", [
+                ("vitra-abertura.webp", "Tela de abertura do Vitra com fundo azul escuro e botões Criar conta e Entrar"),
+                ("vitra-home.webp", "Visão geral no tema claro"),
+                ("vitra-home-dark.webp", "Visão geral no tema escuro"),
+            ], "Abertura e visão geral nos temas claro e escuro."),
+         ]},
+        {"title": "Guia de estilo", "html": """
+<p>O projeto foi construído sobre tokens de cor, tipografia, espaçamento e raio, organizados no Figma com variáveis para os dois temas. Os componentes, como botões, campos, chips de filtro, itens de venda, selos de status, painéis inferiores e barra de navegação, usam esses tokens, o que permitiu montar todas as telas e estados com consistência dentro do prazo.</p>
+<p>A tipografia é a Lato, legível em tamanhos pequenos e com números claros, essencial para um app de valores.</p>
+""",
+         "media": [("html", STYLE_GUIDE_VITRA)]},
+    ],
+},
+
+# ————————————————————————————————————————————————————————————————
 "cte": {
     "title": "Cadastro Técnico Estadual",
+    "card_line": "Sistema da SUDEMA para empreendedores, consultores e técnicos registrarem atividades licenciadas.",
     "client": "SUDEMA, Governo da Paraíba",
     "summary": "Sistema para empreendedores, consultores e técnicos da SUDEMA registrarem e acompanharem atividades licenciadas, com fluxos pensados para três perfis muito diferentes.",
     "lede": "Documentação da experiência do usuário no Cadastro Técnico Estadual: as interações, interfaces e fluxos do sistema, pensados para garantir usabilidade, eficiência e satisfação de quem o usa.",
@@ -493,43 +581,6 @@ PROJECTS = {
             ("scroll", "labrua-home.webp", "Página inicial completa do site do LabRua", "Página inicial completa. Role dentro do quadro para ver tudo."),
             ("img", "labrua-servicos.webp", "Página de eixos de atuação, alternando azul e roxo com vídeo e descrição", "Página de serviços: cada eixo com vídeo e texto, alternando cores."),
             ("phones", [("labrua-mobile.webp", "Início do site do LabRua no celular")], "Versão para celular."),
-         ]},
-    ],
-},
-
-# ————————————————————————————————————————————————————————————————
-"supcard": {
-    "title": "Site da SUPCard",
-    "client": "SUPCard",
-    "card_line": "Site institucional para uma empresa de cartões de crédito de marca própria para o varejo.",
-    "summary": "Site institucional para uma empresa que ajuda varejistas a emitir e gerir cartões de crédito com a própria marca.",
-    "lede": "Site institucional para uma empresa que ajuda varejistas de pequeno, médio e grande porte a emitir e gerir cartões de crédito com a própria marca.",
-    "tags": ["UI Design", "Site", "Responsivo"],
-    "cover": "cover-supcard.webp",
-    "cover_alt": "Topo do site da SUPCard com a chamada Cartões de crédito de marca própria para o varejo brasileiro",
-    "meta": [
-        ("Papel", "UI Designer"),
-        ("Cliente", "SUPCard"),
-        ("Plataforma", "Site responsivo"),
-        ("Páginas", "Início, Sobre, Serviços, Suporte, Revenda"),
-    ],
-    "blocks": [
-        {"title": "Contexto", "html": """
-<p>A SUPCard oferece a estrutura para lojas terem seu próprio cartão de crédito, além de cashback, programa de pontos e gestão pelo app. O site precisava falar com donos de lojas, explicar produtos parecidos entre si e levar ao contato comercial.</p>
-"""},
-        {"title": "Decisões", "html": """
-<ul>
-  <li><b>Proposta clara no topo</b>: o que a empresa faz e para quem, com um único botão de ação, em banners que mostram o benefício para o lojista.</li>
-  <li><b>Produtos lado a lado</b>: cartões private label, convênio e recarga aparecem como opções comparáveis já na primeira dobra.</li>
-  <li><b>Prova social</b>: depoimentos e cartões de clientes reais, com a região onde atuam.</li>
-  <li><b>Contato curto</b>: um formulário com só e-mail e telefone, e WhatsApp como alternativa.</li>
-</ul>
-""",
-         "media": [
-            ("img", "supcard-banners.webp", "Dois banners da SUPCard: Acabe com o fiado desorganizado e A potência de um cartão com a sua identidade", "Banners de topo com mensagens para o lojista."),
-            ("scroll", "supcard-home.webp", "Página inicial completa da SUPCard", "Página inicial completa. Role dentro do quadro para ver tudo."),
-            ("img", "supcard-servicos.webp", "Página de serviços com cartões para cada produto", "Página de serviços."),
-            ("phones", [("supcard-mobile.webp", "Início do site no celular")], "Versão para celular."),
          ]},
     ],
 },
