@@ -533,7 +533,7 @@ PROJECTS = {
 
 # ————————————————————————————————————————————————————————————————
 "labrua": {
-    "title": "Site do LabRua",
+    "title": "Website - LabRua",
     "client": "Laboratório de Rua",
     "card_line": "Site para uma associação de planejamento urbano, com a paleta vibrante da identidade da marca.",
     "summary": "Site institucional para o Laboratório de Rua, associação de planejamento urbano, usando a paleta vibrante da identidade para reforçar a personalidade da marca.",
