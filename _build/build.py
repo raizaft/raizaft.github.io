@@ -59,7 +59,7 @@ def foot(prefix):
     return f"""</main>
 <footer class="foot"><div class="wrap">
   <span>© <span id="ano">2026</span> Raiza Tomazoni</span>
-  <span>Desenhado e construído em João Pessoa, PB</span>
+  <a class="u" href="https://www.linkedin.com/in/raizatomazoni/" target="_blank" rel="noopener">linkedin.com/in/raizatomazoni</a>
 </div></footer>
 <script src="{prefix}assets/js/main.js?v={V}" defer></script>
 </body>
