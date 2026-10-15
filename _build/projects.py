@@ -216,7 +216,7 @@ PROJECTS = {
 # ————————————————————————————————————————————————————————————————
 "vitra": {
     "title": "Vitra App",
-    "client": "Confrapag, desafio de design",
+    "client": "Projeto pessoal",
     "card_line": "App para lojistas acompanharem as vendas da maquininha em tempo real, com modo claro e escuro.",
     "summary": "App para lojistas e funcionários acompanharem em tempo real as vendas da maquininha no crédito, no débito e no pix, com permissões por perfil e modo claro e escuro.",
     "lede": "Um app para quem tem uma maquininha de cartão acompanhar, em tempo real, tudo o que vendeu no crédito, no débito e no pix, do total do dia ao comprovante de cada venda.",
@@ -225,13 +225,13 @@ PROJECTS = {
     "cover_alt": "Três telas do app Vitra: visão geral no tema claro, tela de abertura e visão geral no tema escuro",
     "meta": [
         ("Papel", "UX/UI Designer"),
-        ("Cliente", "Confrapag"),
+        ("Cliente", "Projeto pessoal"),
         ("Ano", "2026"),
         ("Plataforma", "App mobile, claro e escuro"),
     ],
     "blocks": [
         {"title": "Contexto", "html": """
-<p>O Vitra é o app da Confrapag para lojistas que usam suas maquininhas de cartão. Neste desafio de design, desenhei o módulo Gestor de vendas: o lugar onde a pessoa vê, em tempo real, o que vendeu no crédito, no débito e no pix, em uma ou em várias lojas.</p>
+<p>O Vitra é um app para lojistas que usam maquininhas de cartão. Neste projeto, desenhei o módulo Gestor de vendas: o lugar onde a pessoa vê, em tempo real, o que vendeu no crédito, no débito e no pix, em uma ou em várias lojas.</p>
 <p>Os requisitos vieram prontos no briefing e o prazo era curto, sem etapa de descoberta. Por isso, concentrei o trabalho em organizar bem a informação, cobrir os estados de cada tela e construir uma base consistente de componentes.</p>
 """},
         {"title": "Dois perfis, o mesmo app", "html": """
