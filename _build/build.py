@@ -140,7 +140,6 @@ def build_index():
 <section class="section"><div class="wrap">
   <div class="section__head" data-reveal>
     <h2 class="section__title">Mais trabalhos</h2>
-    <p class="section__note">Apps, sites e interfaces, com foco em UI e identidade visual.</p>
   </div>
   <div class="grid">{''.join(cards)}
   </div>
