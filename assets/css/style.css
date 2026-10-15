@@ -338,3 +338,14 @@ h1, h2, h3 {
 .sg-radio.is-on::before { border-color: var(--sg-orange); background: radial-gradient(circle, var(--sg-orange) 0 4px, #fff 5px); }
 .sg-post { display: flex; flex-wrap: wrap; gap: 24px; align-items: flex-end; }
 .sg-post img { max-width: min(100%, 428px); border-radius: 10px; border: 1px solid #eee; background: #fff; }
+
+/* Fluxos em acordeão */
+.flow { border-bottom: 1px solid var(--line); }
+.block__body h3 + .flow { border-top: 1px solid var(--line); }
+.flow summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 14px 0; font-weight: 600; color: var(--ink); }
+.flow summary::-webkit-details-marker { display: none; }
+.flow summary::after { content: "+"; font-weight: 400; font-size: 1.375rem; line-height: 1; transition: transform .3s var(--ease); }
+.flow[open] summary::after { transform: rotate(45deg); }
+.flow summary:hover { color: var(--cobalt); }
+.flow ol { margin: 0 0 18px; }
+@media (prefers-reduced-motion: no-preference) { .flow[open] ol { animation: flowin .35s var(--ease); } @keyframes flowin { from { opacity: 0; transform: translateY(-6px); } } }

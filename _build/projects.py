@@ -217,7 +217,7 @@ PROJECTS = {
     "title": "Cadastro Técnico Estadual",
     "client": "SUDEMA, Governo da Paraíba",
     "summary": "Sistema para empreendedores, consultores e técnicos da SUDEMA registrarem e acompanharem atividades licenciadas, com fluxos pensados para três perfis muito diferentes.",
-    "lede": "Um sistema do governo da Paraíba onde empreendedores registram suas atividades potencialmente poluidoras, vinculam consultores ambientais e emitem o certificado de regularidade, e onde técnicos da SUDEMA acompanham tudo.",
+    "lede": "Documentação da experiência do usuário no Cadastro Técnico Estadual: as interações, interfaces e fluxos do sistema, pensados para garantir usabilidade, eficiência e satisfação de quem o usa.",
     "tags": ["UX/UI Design", "Governo", "Sistema web", "Responsivo"],
     "cover": "cover-cte.webp",
     "cover_alt": "Página inicial do Cadastro Técnico Estadual sobre uma foto da caatinga paraibana",
@@ -228,42 +228,156 @@ PROJECTS = {
         ("No ar", '<a href="https://cte.sigma.pb.gov.br" target="_blank" rel="noopener">cte.sigma.pb.gov.br</a>'),
     ],
     "blocks": [
-        {"title": "O problema", "html": """
-<p>Quem exerce atividade potencialmente poluidora na Paraíba precisa estar inscrito no Cadastro Técnico Estadual. Na prática, empreendedores tinham dificuldade para registrar suas atividades e para gerenciar os consultores ambientais vinculados à sua conta, e a SUDEMA precisava de mais controle sobre os dados e as ações de cada perfil.</p>
+        {"title": "Introdução", "html": """
+<p>Esta documentação tem como foco a experiência do usuário no Cadastro Técnico Estadual (CTE). O objetivo é detalhar as interações, interfaces e fluxos de usuários do sistema, garantindo a usabilidade, a eficiência e a satisfação dos usuários finais.</p>
 """},
-        {"title": "Três perfis, três jornadas", "html": """
-<p>O sistema atende pessoas com objetivos e familiaridade com tecnologia muito diferentes. Escrevi personas e histórias de usuário para cada uma:</p>
+        {"title": "Problema a ser resolvido", "html": """
+<p>O principal problema é a dificuldade enfrentada pelos empreendedores para cadastrar suas atividades junto à SUDEMA e gerenciar os consultores vinculados à sua conta. Além disso, era preciso melhorar a eficiência do gerenciamento de dados e das interações entre os usuários do sistema.</p>
+"""},
+        {"title": "Solução", "html": """
+<p>A solução proposta é uma plataforma on-line integrada e intuitiva, que facilita o cadastro de atividades pelos empreendedores, simplifica a busca e o vínculo com consultores ambientais qualificados e oferece ferramentas de gerenciamento eficazes para todos os perfis de usuário.</p>
+"""},
+        {"title": "Visão geral da experiência", "html": """
+<p>O CTE foi pensado e desenvolvido com uma abordagem centrada no usuário, priorizando a facilidade de uso, a clareza das informações e a eficiência nas interações.</p>
+<h3>Princípios de design</h3>
 <ul>
-  <li><b>Empreendedora</b>: registra atividades para obter o certificado de regularidade, aceita ou recusa pedidos de vínculo de consultores e acompanha o histórico da conta, inclusive o que o consultor fez em seu nome.</li>
-  <li><b>Consultor</b>: pede vínculo com empreendedores, cadastra atividades por eles e gera certificados.</li>
-  <li><b>Técnico da SUDEMA</b>: gerencia contas, vínculos e permissões, e audita o histórico de qualquer empreendedor.</li>
+  <li><b>Usabilidade:</b> o sistema foi projetado para ser intuitivo e fácil de usar, independentemente da familiaridade da pessoa com tecnologia. As interfaces foram simplificadas e organizadas de forma lógica, para que todos naveguem com confiança e sem esforço excessivo.</li>
+  <li><b>Clareza de informações:</b> um dos principais objetivos do CTE é oferecer informações claras e relevantes em todos os momentos. Da página inicial aos formulários de cadastro e gerenciamento, cada elemento da interface foi pensado para comunicar de forma concisa e compreensível.</li>
+  <li><b>Consistência:</b> as interfaces seguem um conjunto consistente de padrões de design, o que facilita a familiarização e a navegação em todo o sistema.</li>
+  <li><b>Feedback:</b> o sistema responde de forma clara e imediata a cada ação, para que o usuário saiba sempre o status das operações.</li>
+  <li><b>Suporte:</b> páginas de ajuda e formulários de dúvidas facilitam a comunicação entre usuários e equipe técnica.</li>
 </ul>
-"""},
-        {"title": "Decisões de design", "html": """
-<h3>Confiança no vínculo</h3>
-<p>Antes de aceitar um consultor, a empreendedora vê os documentos dele. Ninguém age em nome de outra pessoa sem consentimento explícito.</p>
-<h3>Histórico auditável</h3>
-<p>Toda ação fica registrada: o que foi feito, quando e por quem. Se um técnico exclui uma atividade, a justificativa fica visível para quem consultar o histórico.</p>
-<h3>Formulários que explicam</h3>
-<p>Campos com descrição, exemplos e validação em tempo real. Quando uma ação depende de outro sistema, como o PBdoc, a tela diz isso e leva até lá, em vez de deixar a pessoa procurar.</p>
-<h3>Um padrão para tudo</h3>
-<p>Navegação hierárquica com menu lateral fixo, botões e links com comportamento consistente, cores e ícones para status e retorno imediato a cada ação. A mesma estrutura funciona no computador, no tablet e no celular.</p>
 """,
          "media": [
-            ("img", "cte-inicio.webp", "Página inicial com explicação do que é o CTE, quem precisa se cadastrar e botões para acessar, criar conta e consultar", "O início explica o que é o cadastro e quem precisa dele antes de pedir login."),
-            ("img", "cte-atividades.webp", "Lista de atividades do empreendedor com filtros por licença, atividade e status", "Atividades com filtros e um aviso que evita cadastros antes da licença."),
-            ("img", "cte-acoes.webp", "Modal Outras ações listando solicitações que devem ser feitas pelo PBdoc", "Quando a ação é em outro sistema, a tela diz qual e leva até ele."),
-            ("img", "cte-justificativa.webp", "Modal de justificativa no histórico, mostrando qual técnico excluiu a atividade e por quê", "Histórico auditável: quem fez, quando e por quê."),
-            ("phones", [("cte-mobile.webp", "Lista de atividades no celular com status por cor")], "Versão para celular com a mesma estrutura."),
+            ("img", "cte-inicio.webp", "Página inicial com explicação do que é o CTE, quem precisa se cadastrar e botões para acessar, criar conta e consultar", "Página inicial: o que é o cadastro e quem precisa dele vêm antes do login."),
          ]},
-        {"title": "Fluxos principais", "html": """
+        {"title": "Componentes de interface", "html": """
 <ul>
-  <li><b>Cadastrar atividade</b>: entrar, escolher nova atividade, informar o número da licença, revisar e confirmar.</li>
-  <li><b>Emitir certificado</b>: abrir os detalhes da atividade, conferir as informações e gerar o certificado para impressão.</li>
-  <li><b>Vincular consultor</b>: o consultor envia o pedido, a empreendedora analisa os documentos e aceita ou recusa.</li>
+  <li><b>Navegação intuitiva:</b> estrutura clara e hierárquica, que facilita encontrar e acessar as diferentes funcionalidades.</li>
+  <li><b>Formulários amigáveis:</b> projetados com atenção especial à usabilidade, com descrições, exemplos, validação em tempo real e feedback para orientar o preenchimento.</li>
+  <li><b>Controles interativos:</b> botões, links e outros elementos interativos com destaque visual e comportamento consistente.</li>
+  <li><b>Feedback visual:</b> cores e ícones comunicam informações importantes e orientam o usuário em suas ações.</li>
 </ul>
-<p><a href="https://medium.com/@raizaft/cadastro-t%C3%A9cnico-estadual-cte-sudema-pb-e11445055f71" target="_blank" rel="noopener">Ler a documentação completa no Medium</a></p>
+<h3>Responsividade</h3>
+<p>O sistema tem design responsivo e se adapta automaticamente a diferentes dispositivos e tamanhos de tela, garantindo uma experiência consistente no computador, no tablet e no celular.</p>
+""",
+         "media": [
+            ("img", "cte-atividades.webp", "Lista de atividades do empreendedor com filtros por licença, atividade e status e menu lateral fixo", "Área do empreendedor: menu lateral fixo, filtros e um aviso que evita cadastros antes da licença."),
+            ("phones", [("cte-mobile.webp", "Lista de atividades no celular com status por cor")], "No celular, a mesma lista com status identificados por cor."),
+         ]},
+        {"title": "Personas", "html": """
+<p>O CTE atende três perfis com objetivos e rotinas bem diferentes: a empreendedora que precisa se regularizar, o consultor que faz isso por vários clientes e o técnico que administra o sistema.</p>
+""",
+         "media": [
+            ("img", "cte-personas.webp", "Personas Ana Silva, empreendedora de 43 anos de Campina Grande; Pedro Oliveira, engenheiro ambiental de 34 anos de João Pessoa; e João Santos, técnico ambiental de 56 anos de João Pessoa, com descrição e objetivos", "Personas: Ana Silva (empreendedora), Pedro Oliveira (consultor) e João Santos (técnico)."),
+         ]},
+        {"title": "Histórias de usuário", "html": """
+<h3>Para a empreendedora</h3>
+<ul>
+  <li>Como Ana Silva, quero cadastrar novas atividades no CTE para obter certificados de regularidade.</li>
+  <li>Como Ana Silva, quero visualizar meus dados cadastrais e atualizar meus dados de acesso e contato.</li>
+  <li>Como Ana Silva, quero ver o histórico de todas as ações realizadas na minha conta, incluindo as que meu consultor realizou.</li>
+  <li>Como Ana Silva, quero aceitar ou recusar solicitações de vínculo de consultores para receber assistência na regularização ambiental.</li>
+</ul>
+<h3>Para o consultor</h3>
+<ul>
+  <li>Como Pedro Oliveira, quero solicitar vínculo com empreendedores para ajudá-los no processo de regularização ambiental.</li>
+  <li>Como Pedro Oliveira, quero cadastrar e visualizar atividades dos empreendedores vinculados para garantir sua regularidade.</li>
+  <li>Como Pedro Oliveira, quero visualizar meus dados cadastrais e atualizar meus dados de acesso e contato.</li>
+  <li>Como Pedro Oliveira, quero ver o histórico das ações dos empreendedores com quem tenho vínculo.</li>
+</ul>
+<h3>Para o técnico</h3>
+<ul>
+  <li>Como João Santos, quero visualizar, atualizar e excluir qualquer conta de usuário para garantir a integridade do sistema.</li>
+  <li>Como João Santos, quero visualizar e excluir atividades dos empreendedores para corrigir informações incorretas ou desatualizadas.</li>
+  <li>Como João Santos, quero gerenciar os vínculos de consultores, podendo aceitar, recusar ou remover vínculos conforme necessário.</li>
+  <li>Como João Santos, quero atribuir permissões a outros técnicos para auxiliar na administração do CTE.</li>
+  <li>Como João Santos, quero ver o histórico das ações de todos os empreendedores do sistema.</li>
+</ul>
 """},
+        {"title": "Fluxos dos usuários", "html": """
+<p>Cada fluxo descreve o caminho de uma persona para cumprir uma tarefa. Abra cada um para ver os passos.</p>
+
+<h3>Empreendedora: Ana Silva</h3>
+<details class="flow"><summary>Cadastro de nova atividade</summary><ol>
+  <li>Ana acessa o CTE e entra na sua conta.</li>
+  <li>Na área do empreendedor, seleciona a opção de cadastrar nova atividade.</li>
+  <li>Preenche o número da licença da atividade.</li>
+  <li>Depois de revisar as informações, confirma o cadastro.</li>
+</ol></details>
+<details class="flow"><summary>Gerar certificado de regularidade</summary><ol>
+  <li>Ana acessa o menu de cadastros.</li>
+  <li>Seleciona a opção de ver os detalhes da atividade.</li>
+  <li>Confere as informações e gera o certificado de regularidade para impressão.</li>
+</ol></details>
+<details class="flow"><summary>Gerenciamento de dados cadastrais</summary><ol>
+  <li>Ana decide atualizar seu endereço de e-mail.</li>
+  <li>Acessa os dados cadastrais da conta e seleciona a opção de alterar dados de acesso e de contato.</li>
+  <li>Atualiza o e-mail e confirma a alteração.</li>
+</ol></details>
+<details class="flow"><summary>Gerenciamento de vínculos com consultores</summary><ol>
+  <li>Ana recebe uma solicitação de vínculo de um consultor.</li>
+  <li>Acessa a área de gestão de vínculos e visualiza os documentos do consultor.</li>
+  <li>Decide aceitar ou recusar o vínculo.</li>
+</ol></details>
+<details class="flow"><summary>Histórico de ações na conta</summary><ol>
+  <li>Ana acessa o menu de histórico.</li>
+  <li>Visualiza quais ações foram realizadas na sua conta e quem as realizou.</li>
+</ol></details>
+
+<h3>Consultor: Pedro Oliveira</h3>
+<details class="flow"><summary>Solicitação de vínculo com empreendedores</summary><ol>
+  <li>Pedro acessa o CTE e entra na sua conta de consultor.</li>
+  <li>Procura empreendedores que possam precisar de assistência na regularização ambiental.</li>
+  <li>Envia solicitações de vínculo para os empreendedores selecionados.</li>
+</ol></details>
+<details class="flow"><summary>Cadastro de atividades</summary><ol>
+  <li>Pedro visualiza as atividades dos empreendedores vinculados à sua conta.</li>
+  <li>Adiciona novas atividades conforme necessário.</li>
+</ol></details>
+<details class="flow"><summary>Gerar certificado de regularidade</summary><ol>
+  <li>Pedro visualiza os detalhes das atividades dos empreendedores vinculados.</li>
+  <li>Confere as informações e gera o certificado de regularidade para impressão.</li>
+</ol></details>
+<details class="flow"><summary>Gerenciamento de dados cadastrais</summary><ol>
+  <li>Pedro decide alterar sua senha.</li>
+  <li>Acessa os dados cadastrais da conta e seleciona a opção de alterar dados de acesso e de contato.</li>
+  <li>Atualiza a senha e confirma a alteração.</li>
+</ol></details>
+<details class="flow"><summary>Histórico de ações dos empreendedores</summary><ol>
+  <li>Pedro precisa conferir quem alterou o e-mail na conta de um empreendedor.</li>
+  <li>Acessa o histórico desse empreendedor.</li>
+  <li>Visualiza quais ações foram realizadas, quando e por quem.</li>
+</ol></details>
+
+<h3>Técnico: João Santos</h3>
+<details class="flow"><summary>Gerenciamento de contas de usuário</summary><ol>
+  <li>João precisa alterar o telefone de um consultor.</li>
+  <li>Acessa o painel de gerenciamento de contas e visualiza os dados cadastrais da conta.</li>
+  <li>Atualiza o número de telefone e confirma a ação.</li>
+</ol></details>
+<details class="flow"><summary>Visualização e exclusão de atividades</summary><ol>
+  <li>João visualiza os detalhes de todas as atividades dos empreendedores do CTE.</li>
+  <li>Tem permissão para excluir atividades dos empreendedores.</li>
+</ol></details>
+<details class="flow"><summary>Gerenciamento de vínculos de consultores</summary><ol>
+  <li>João revisa os vínculos entre consultores e empreendedores.</li>
+  <li>Aceita, recusa ou remove vínculos conforme necessário.</li>
+</ol></details>
+<details class="flow"><summary>Atribuição de permissões a outros técnicos</summary><ol>
+  <li>João precisa configurar o perfil de um novo técnico.</li>
+  <li>Entra no painel de perfis e permissões e atribui ao novo técnico autorizações de edição e/ou exclusão.</li>
+</ol></details>
+<details class="flow"><summary>Histórico de ações dos empreendedores</summary><ol>
+  <li>João quer saber por que uma atividade foi excluída.</li>
+  <li>Acessa o histórico do empreendedor que tinha a atividade.</li>
+  <li>Visualiza qual técnico fez a exclusão e qual foi a justificativa.</li>
+</ol></details>
+""",
+         "media": [
+            ("img", "cte-acoes.webp", "Modal Outras ações listando solicitações que devem ser feitas pelo PBdoc", "Quando uma ação depende de outro sistema, a tela diz qual é e leva até ele."),
+            ("img", "cte-justificativa.webp", "Modal de justificativa no histórico, mostrando qual técnico excluiu a atividade e por quê", "Histórico: o técnico vê quem excluiu uma atividade e a justificativa."),
+         ]},
     ],
 },
 
