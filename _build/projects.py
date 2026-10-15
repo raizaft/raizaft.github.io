@@ -540,7 +540,9 @@ PROJECTS = {
     "lede": "Site institucional para uma associação sem fins lucrativos dedicada ao planejamento urbano e regional, ao desenho urbano e à pesquisa, com mais de dez anos de atuação em cidades brasileiras.",
     "tags": ["UI Design", "Site", "Responsivo"],
     "cover": "cover-labrua.webp",
-    "cover_alt": "Topo do site do LabRua com a frase A rua como laboratório sobre fundo amarelo",
+    "cover_alt": "Telas do site do LabRua em celulares e notebook sobre fundo roxo, com o logotipo no canto",
+    "case_cover": "labrua-capa.webp",
+    "case_cover_alt": "Telas do site do LabRua em celulares e notebook sobre fundo roxo, com o logotipo no canto",
     "meta": [
         ("Papel", "UI Designer"),
         ("Cliente", "LabRua"),
