@@ -56,14 +56,14 @@ PROJECTS = {
 <h3>Larissa: encontrar iniciativas parecidas</h3>
 <p>Larissa quer organizar um evento e conhecer iniciativas que atuam na mesma temática, mas não sabe por onde começar a busca e não confia nas informações que encontra. Daí surgiram oportunidades como um catálogo de iniciativas, agrupamento por temática e região, perfis completos das iniciativas e espaços de discussão.</p>
 <h3>Marcos: publicar uma oportunidade</h3>
-<p>Para divulgar um novo curso, Marcos precisa pedir ao time de tecnologia que publique no mural, revisar tudo depois e pedir de novo uma planilha de contatos. Daí surgiram oportunidades como a inserção direta de oportunidades, edição e exclusão pelo próprio gestor e a busca de contatos com filtros e exportação em CSV.</p>
+<p>Para divulgar um novo curso, Marcos precisa pedir ao time de tecnologia que publique no mural, revisar tudo depois e pedir de novo uma planilha de contatos. Daí surgiram oportunidades como dar mais autonomia ao gestor e a busca de contatos com filtros e exportação em CSV.</p>
 """,
          "media": [
             ("img", "np-jornada-larissa.webp", "Jornada da Larissa em cinco fases, da decisão de organizar um evento à troca de experiências, com curva de emoções", "Jornada da Larissa."),
             ("img", "np-jornada-marcos.webp", "Jornada do Marcos em cinco fases, do lançamento de um curso ao contato com os usuários, com curva de emoções", "Jornada do Marcos."),
          ]},
         {"title": "Priorização", "html": """
-<p>As oportunidades das jornadas foram organizadas numa Matriz de Impacto x Esforço. As de alto impacto e fácil implementação, como catálogo de iniciativas, mural de oportunidades atualizado, segmentação de contatos para extração em CSV e convite para grupos de WhatsApp, entraram primeiro. As estratégicas, como gerenciamento de oportunidades e de permissões, espaços temáticos, fóruns e conquistas, foram planejadas para as entregas seguintes.</p>
+<p>As oportunidades das jornadas foram organizadas numa Matriz de Impacto x Esforço. As de alto impacto e fácil implementação, como catálogo de iniciativas, mural de oportunidades atualizado, segmentação de contatos para extração em CSV e convite para grupos de WhatsApp, entraram primeiro. As estratégicas, como gerenciamento de permissões, espaços temáticos, fóruns e conquistas, foram planejadas para as entregas seguintes.</p>
 """,
          "media": [
             ("img", "np-matriz.webp", "Matriz de Impacto x Esforço com as funcionalidades distribuídas entre essencial, estratégico, indiferente e luxo", "Matriz de Impacto x Esforço."),
@@ -71,7 +71,7 @@ PROJECTS = {
         {"title": "Entregas", "html": """
 <p>A partir da priorização, as funcionalidades foram divididas em módulos e lançadas em etapas:</p>
 <ol>
-  <li><b>Primeira etapa:</b> convite para grupos de WhatsApp no cadastro, módulo de permissões para diferenciar gestores e demais usuários, votação popular e módulo de oportunidades, com autonomia para inserir, editar e excluir e um mural renovado.</li>
+  <li><b>Primeira etapa:</b> convite para grupos de WhatsApp no cadastro, módulo de permissões para diferenciar gestores e demais usuários e votação popular.</li>
   <li><b>Segunda etapa:</b> espaços temáticos, Mapeamento Popular e conquistas.</li>
   <li><b>Terceira etapa:</b> módulo de comunicação, com segmentação e extração de contatos em CSV, módulo de cursos e desafios.</li>
   <li><b>Em avaliação:</b> calendário e favoritos.</li>
@@ -87,7 +87,7 @@ PROJECTS = {
 <h3>Espaços temáticos</h3>
 <p>Temas como adaptação climática e geração cidadã de dados ganharam páginas próprias, que explicam como participar em três passos e reúnem projetos e oportunidades daquele tema.</p>
 <h3>Área de gestão</h3>
-<p>Para a equipe da SNP, uma área separada para gerenciar permissões, publicar oportunidades e acompanhar as iniciativas cadastradas.</p>
+<p>Para a equipe da SNP, uma área separada para gerenciar permissões e acompanhar as iniciativas cadastradas.</p>
 """,
          "media": [
             ("img", "np-mural.webp", "Mural de oportunidades com filtros e cartões de editais com o status de inscrição", "Mural de oportunidades: o status de inscrição aparece primeiro em cada cartão."),
