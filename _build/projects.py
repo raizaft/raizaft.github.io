@@ -9,7 +9,7 @@ PROJECTS = {
 
 # ————————————————————————————————————————————————————————————————
 "nos-perifericos": {
-    "title": "Nós Periféricos e Busca CEP",
+    "title": "Nós Periféricos",
     "card_line": "Plataforma federal para iniciativas das periferias e a busca do CEP oficial de favelas e comunidades.",
     "client": "Secretaria Nacional de Periferias, Ministério das Cidades",
     "summary": "Plataforma criada do zero para iniciativas das periferias encontrarem editais, cursos e oportunidades do governo federal, e a busca que leva o CEP do programa CEP para Todos a quem mora em favelas e comunidades.",
