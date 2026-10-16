@@ -24,24 +24,24 @@ PROJECTS = {
         ("No ar", '<a href="https://mapadasperiferias.cidades.gov.br" target="_blank" rel="noopener">mapadasperiferias.cidades.gov.br</a>'),
     ],
     "blocks": [
-        {"title": "Cenário atual", "html": """
-<p>A plataforma Nós Periféricos é essencial para ampliar o alcance das iniciativas, fortalecer comunidades periféricas e promover conexões entre usuários e territórios. Ela centraliza o cadastro de iniciativas periféricas de todo o país e oferece oportunidades que fortalecem a atuação individual e coletiva dos usuários e de seus territórios.</p>
-<p>No entanto, não havia interação entre usuários que ajudasse a conhecer iniciativas semelhantes, nem personalização das oportunidades por perfil, temática ou região. O gerenciamento das oportunidades dependia de processos manuais e do suporte do time de tecnologia, o que tornava a inserção lenta e custosa. Além disso, cada iniciativa era cadastrada por uma única pessoa, e os outros colaboradores acabavam sem motivo para entrar na plataforma.</p>
-<p>Num contexto em que tudo é cada vez mais digital, a plataforma precisava funcionar como um espaço vivo de interação, aprendizado e colaboração.</p>
+        {"title": "O desafio", "html": """
+<p>A Secretaria Nacional de Periferias (SNP) mantém programas, editais, cursos e ações voltados a favelas e comunidades urbanas de todo o país, mas não existia um lugar único onde as iniciativas periféricas pudessem se cadastrar, encontrar o que se aplica à sua realidade e se conectar entre si.</p>
+<p>A informação circulava por redes sociais, grupos de WhatsApp e contatos pessoais. Quem liderava uma iniciativa não tinha como conhecer outras que atuam na mesma temática, e a equipe da Secretaria dependia de processos manuais e do time de tecnologia para divulgar oportunidades e falar com as pessoas certas.</p>
+<p>O Nós Periféricos nasceu para resolver isso: uma rede digital criada do zero para ampliar o alcance das iniciativas, fortalecer comunidades periféricas e promover conexões entre pessoas e territórios, funcionando como um espaço vivo de interação, aprendizado e colaboração.</p>
 """},
         {"title": "Objetivos", "html": """
 <ul>
-  <li>Tornar a plataforma mais amigável e acessível, para que os usuários encontrem informações relevantes de forma centralizada.</li>
+  <li>Criar uma plataforma amigável e acessível, onde as pessoas encontrem informações relevantes de forma centralizada.</li>
   <li>Ser um espaço de troca de experiências e colaboração entre iniciativas e de capacitação para pessoas de comunidades periféricas.</li>
-  <li>Criar um espaço educativo e inspirador onde as iniciativas possam fortalecer sua atuação em diferentes áreas.</li>
-  <li>Dar autonomia aos gestores para inserir, atualizar e acessar informações, tornando o uso da rede mais eficiente.</li>
+  <li>Oferecer um ambiente educativo e inspirador, onde as iniciativas possam fortalecer sua atuação em diferentes áreas.</li>
+  <li>Dar autonomia à equipe da Secretaria para acessar e acompanhar as informações da rede, tornando o trabalho mais eficiente.</li>
 </ul>
 """},
         {"title": "Meu papel", "html": """
 <p>Criei a plataforma do zero, da arquitetura de informação às telas finais, e conduzi pesquisas de usabilidade com pessoas usuárias ao longo do processo. Também desenhei a área de gestão usada pela equipe da SNP e as versões para celular.</p>
 """},
         {"title": "Personas", "html": """
-<p>Para manter as pessoas usuárias no centro do projeto, criei duas personas que representam os dois lados da plataforma: quem lidera uma iniciativa e quem a gerencia dentro da Secretaria. Elas ajudaram a humanizar os dados e a deixar claro, para toda a equipe, para quem o sistema é feito.</p>
+<p>Para manter as pessoas usuárias no centro do projeto desde o início, criei duas personas que representam os dois lados da plataforma: quem lidera uma iniciativa e quem a gerencia dentro da Secretaria. Elas ajudaram a humanizar os dados e a deixar claro, para toda a equipe, para quem o sistema é feito.</p>
 <h3>Larissa Oliveira, responsável por iniciativa</h3>
 <p>Lidera uma iniciativa periférica e quer fortalecer sua atuação com informações relevantes para o território e com a divulgação da iniciativa em nível regional e nacional. Gasta tempo procurando conteúdos, perde editais e eventos por não saber que aconteceriam e tem colaboradores com vontade de ajudar, mas pouca capacitação.</p>
 <h3>Marcos Andrade, técnico da SNP</h3>
@@ -52,7 +52,7 @@ PROJECTS = {
             ("img", "np-persona-marcos.webp", "Persona Marcos Andrade, técnico da SNP, com citação, descrição, desafios e objetivos", "Persona Marcos Andrade."),
          ]},
         {"title": "Jornadas do usuário", "html": """
-<p>As jornadas mostram o caminho de cada persona hoje, fase por fase: o que faz, o que pensa e sente, e as oportunidades que cada momento abre para a plataforma.</p>
+<p>As jornadas mostram o caminho que cada persona percorria sem a plataforma, fase por fase: o que faz, o que pensa e sente, e as oportunidades que cada momento abre para a plataforma.</p>
 <h3>Larissa: encontrar iniciativas parecidas</h3>
 <p>Larissa quer organizar um evento e conhecer iniciativas que atuam na mesma temática, mas não sabe por onde começar a busca e não confia nas informações que encontra. Daí surgiram oportunidades como um catálogo de iniciativas, agrupamento por temática e região, perfis completos das iniciativas e espaços de discussão.</p>
 <h3>Marcos: publicar uma oportunidade</h3>
@@ -69,7 +69,7 @@ PROJECTS = {
             ("img", "np-matriz.webp", "Matriz de Impacto x Esforço com as funcionalidades distribuídas entre essencial, estratégico, indiferente e luxo", "Matriz de Impacto x Esforço."),
          ]},
         {"title": "Entregas", "html": """
-<p>A partir da priorização, as funcionalidades foram divididas em módulos e lançadas em etapas:</p>
+<p>A partir da priorização, a plataforma foi construída em módulos e lançada em etapas:</p>
 <ol>
   <li><b>Primeira etapa:</b> convite para grupos de WhatsApp no cadastro, módulo de permissões para diferenciar gestores e demais usuários e votação popular.</li>
   <li><b>Segunda etapa:</b> espaços temáticos, Mapeamento Popular e conquistas.</li>
