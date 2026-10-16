@@ -24,12 +24,60 @@ PROJECTS = {
         ("No ar", '<a href="https://mapadasperiferias.cidades.gov.br" target="_blank" rel="noopener">mapadasperiferias.cidades.gov.br</a>'),
     ],
     "blocks": [
-        {"title": "Contexto", "html": """
-<p>A Secretaria Nacional de Periferias (SNP) mantém programas, editais, cursos e ações voltados a favelas e comunidades urbanas de todo o país. Faltava um lugar único onde as iniciativas pudessem encontrar o que se aplica à sua realidade.</p>
-<p>O Nós Periféricos nasceu para ser o espaço digital dessas iniciativas: um lugar para se cadastrar, acompanhar oportunidades, participar de cursos e do Mapeamento Popular.</p>
+        {"title": "Cenário atual", "html": """
+<p>A plataforma Nós Periféricos é essencial para ampliar o alcance das iniciativas, fortalecer comunidades periféricas e promover conexões entre usuários e territórios. Ela centraliza o cadastro de iniciativas periféricas de todo o país e oferece oportunidades que fortalecem a atuação individual e coletiva dos usuários e de seus territórios.</p>
+<p>No entanto, não havia interação entre usuários que ajudasse a conhecer iniciativas semelhantes, nem personalização das oportunidades por perfil, temática ou região. O gerenciamento das oportunidades dependia de processos manuais e do suporte do time de tecnologia, o que tornava a inserção lenta e custosa. Além disso, cada iniciativa era cadastrada por uma única pessoa, e os outros colaboradores acabavam sem motivo para entrar na plataforma.</p>
+<p>Num contexto em que tudo é cada vez mais digital, a plataforma precisava funcionar como um espaço vivo de interação, aprendizado e colaboração.</p>
+"""},
+        {"title": "Objetivos", "html": """
+<ul>
+  <li>Tornar a plataforma mais amigável e acessível, para que os usuários encontrem informações relevantes de forma centralizada.</li>
+  <li>Ser um espaço de troca de experiências e colaboração entre iniciativas e de capacitação para pessoas de comunidades periféricas.</li>
+  <li>Criar um espaço educativo e inspirador onde as iniciativas possam fortalecer sua atuação em diferentes áreas.</li>
+  <li>Dar autonomia aos gestores para inserir, atualizar e acessar informações, tornando o uso da rede mais eficiente.</li>
+</ul>
 """},
         {"title": "Meu papel", "html": """
 <p>Criei a plataforma do zero, da arquitetura de informação às telas finais, e conduzi pesquisas de usabilidade com pessoas usuárias ao longo do processo. Também desenhei a área de gestão usada pela equipe da SNP e as versões para celular.</p>
+"""},
+        {"title": "Personas", "html": """
+<p>Para manter as pessoas usuárias no centro do projeto, criei duas personas que representam os dois lados da plataforma: quem lidera uma iniciativa e quem a gerencia dentro da Secretaria. Elas ajudaram a humanizar os dados e a deixar claro, para toda a equipe, para quem o sistema é feito.</p>
+<h3>Larissa Oliveira, responsável por iniciativa</h3>
+<p>Lidera uma iniciativa periférica e quer fortalecer sua atuação com informações relevantes para o território e com a divulgação da iniciativa em nível regional e nacional. Gasta tempo procurando conteúdos, perde editais e eventos por não saber que aconteceriam e tem colaboradores com vontade de ajudar, mas pouca capacitação.</p>
+<h3>Marcos Andrade, técnico da SNP</h3>
+<p>Atua em programas e ações do governo e precisa inserir e extrair dados da plataforma. Depende do setor de tecnologia para publicar oportunidades e conseguir contatos de usuários, e quer garantir que as informações da rede estejam sempre corretas.</p>
+""",
+         "media": [
+            ("img", "np-persona-larissa.webp", "Persona Larissa Oliveira, responsável por iniciativa, com citação, descrição, desafios e objetivos", "Persona Larissa Oliveira."),
+            ("img", "np-persona-marcos.webp", "Persona Marcos Andrade, técnico da SNP, com citação, descrição, desafios e objetivos", "Persona Marcos Andrade."),
+         ]},
+        {"title": "Jornadas do usuário", "html": """
+<p>As jornadas mostram o caminho de cada persona hoje, fase por fase: o que faz, o que pensa e sente, e as oportunidades que cada momento abre para a plataforma.</p>
+<h3>Larissa: encontrar iniciativas parecidas</h3>
+<p>Larissa quer organizar um evento e conhecer iniciativas que atuam na mesma temática, mas não sabe por onde começar a busca e não confia nas informações que encontra. Daí surgiram oportunidades como um catálogo de iniciativas, agrupamento por temática e região, perfis completos das iniciativas e espaços de discussão.</p>
+<h3>Marcos: publicar uma oportunidade</h3>
+<p>Para divulgar um novo curso, Marcos precisa pedir ao time de tecnologia que publique no mural, revisar tudo depois e pedir de novo uma planilha de contatos. Daí surgiram oportunidades como a inserção direta de oportunidades, edição e exclusão pelo próprio gestor e a busca de contatos com filtros e exportação em CSV.</p>
+""",
+         "media": [
+            ("img", "np-jornada-larissa.webp", "Jornada da Larissa em cinco fases, da decisão de organizar um evento à troca de experiências, com curva de emoções", "Jornada da Larissa."),
+            ("img", "np-jornada-marcos.webp", "Jornada do Marcos em cinco fases, do lançamento de um curso ao contato com os usuários, com curva de emoções", "Jornada do Marcos."),
+         ]},
+        {"title": "Priorização", "html": """
+<p>As oportunidades das jornadas foram organizadas numa Matriz de Impacto x Esforço. As de alto impacto e fácil implementação, como catálogo de iniciativas, mural de oportunidades atualizado, segmentação de contatos para extração em CSV e convite para grupos de WhatsApp, entraram primeiro. As estratégicas, como gerenciamento de oportunidades e de permissões, espaços temáticos, fóruns e conquistas, foram planejadas para as entregas seguintes.</p>
+""",
+         "media": [
+            ("img", "np-matriz.webp", "Matriz de Impacto x Esforço com as funcionalidades distribuídas entre essencial, estratégico, indiferente e luxo", "Matriz de Impacto x Esforço."),
+         ]},
+        {"title": "Entregas", "html": """
+<p>A partir da priorização, as funcionalidades foram divididas em módulos e lançadas em etapas:</p>
+<ol>
+  <li><b>Primeira etapa:</b> convite para grupos de WhatsApp no cadastro, módulo de permissões para diferenciar gestores e demais usuários, votação popular e módulo de oportunidades, com autonomia para inserir, editar e excluir e um mural renovado.</li>
+  <li><b>Segunda etapa:</b> espaços temáticos, Mapeamento Popular e conquistas.</li>
+  <li><b>Terceira etapa:</b> módulo de comunicação, com segmentação e extração de contatos em CSV, módulo de cursos e desafios.</li>
+  <li><b>Em avaliação:</b> calendário e favoritos.</li>
+</ol>
+<h3>Manter a plataforma viva</h3>
+<p>Para garantir constância de cadastros e uso, o produto veio acompanhado de estratégias de comunicação, como newsletter com novas oportunidades, lançamento por módulos, divulgação nas Caravanas e oficinas, vídeos tutoriais e um manual do usuário. Na plataforma, funcionalidades como o mural sempre atualizado, o catálogo de iniciativas, o destaque para iniciativas engajadas e a possibilidade de adicionar membros à iniciativa estimulam o retorno e o sentimento de pertencimento.</p>
 """},
         {"title": "O que desenhei", "html": """
 <h3>Uma área para cada iniciativa</h3>
