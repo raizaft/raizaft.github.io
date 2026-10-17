@@ -500,7 +500,9 @@ PROJECTS = {
     "lede": "Um app que junta num só lugar o que a população e os empreendedores mais procuram na SUDEMA: notícias, se a praia está própria para banho e em que pé está um processo de licenciamento.",
     "tags": ["UX/UI Design", "App", "Governo"],
     "cover": "cover-sudema.webp",
-    "cover_alt": "Três telas do app Sudema+: início, mapa de balneabilidade e área de consulta SIGMA",
+    "cover_alt": "Três celulares com o app Sudema+: início, tela de abertura e mapa de balneabilidade, sobre fundo azul-escuro",
+    "case_cover": "sudema-capa.webp",
+    "case_cover_alt": "Três celulares com o app Sudema+: início, tela de abertura e mapa de balneabilidade, sobre fundo azul-escuro",
     "meta": [
         ("Papel", "UX/UI Designer"),
         ("Cliente", "SUDEMA-PB"),
