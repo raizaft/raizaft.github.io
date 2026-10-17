@@ -82,7 +82,10 @@ PROJECTS = {
   <li><strong>Linguagem para quem não tem assessoria.</strong> Iniciativas pequenas, informais e sem alguém dedicado a captar recursos esbarram em CNPJ, documentos e editais difíceis de entender. Filtrar oportunidades que aceitam grupos sem CNPJ e explicar cada edital em linguagem simples, com a lista de documentos necessários, atacam as maiores dificuldades citadas.</li>
   <li><strong>Experiência que se sustenta sozinha.</strong> Os cadastros chegam em ondas grandes. Com dezenas de milhares de pessoas entrando na mesma semana, cada tela precisa se explicar sem depender de suporte, e a maioria das pessoas cadastradas é adulta, com pouco tempo, o que reforça textos curtos e caminhos diretos.</li>
 </ul>
-"""},
+""",
+         "media": [
+            ("img", "np-login.webp", "Notebook com a tela de entrada do Nós Periféricos: cartão de login com e-mail, senha, opção de entrar com o Google e link para cadastro, sobre a foto de uma comunidade", "A porta de entrada da plataforma: login com e-mail ou conta Google e acesso direto ao cadastro."),
+         ]},
         {"title": "Busca CEP para Todos", "html": """
 <p>O CEP para Todos é uma iniciativa da SNP com os Correios que leva endereço postal formal a favelas e comunidades urbanas do Brasil. Ter CEP muda coisas básicas: receber correspondência, comprovar residência, fazer compras on-line.</p>
 <p>O desafio era que as pessoas não sabem o CEP novo, mas sabem o nome da comunidade onde moram. Por isso desenhei uma busca que começa pelo que a pessoa já conhece:</p>
