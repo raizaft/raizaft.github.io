@@ -20,8 +20,8 @@ PROJECTS = {
     "meta": [
         ("Papel", "UX/UI Designer"),
         ("Cliente", "Secretaria Nacional de Periferias"),
-        ("Período", "2024 – hoje"),
-        ("No ar", '<a href="https://mapadasperiferias.cidades.gov.br" target="_blank" rel="noopener">mapadasperiferias.cidades.gov.br</a>'),
+        ("Ano", "2025"),
+        ("No ar", '<a href="https://nosperifericos.cidades.gov.br" target="_blank" rel="noopener">nosperifericos.cidades.gov.br</a>'),
     ],
     "blocks": [
         {"title": "O desafio", "html": """
