@@ -399,3 +399,9 @@ h1, h2, h3 {
 .sg-tokens div { border: 1px solid #eee; border-radius: 10px; padding: 14px 16px; background: #fcfcfc; }
 .sg-tokens b { display: block; font-size: .875rem; }
 .sg-tokens span { font-size: .875rem; color: #6b6b6b; }
+
+/* Duas imagens lado a lado */
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(12px, 2vw, 24px); }
+.pair .figure__frame { display: block; }
+.pair img { width: 100%; height: auto; display: block; }
+@media (max-width: 640px) { .pair { grid-template-columns: 1fr; } }

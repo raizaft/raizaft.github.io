@@ -55,19 +55,6 @@ PROJECTS = {
          "media": [
             ("img", "np-jornada-larissa.webp", "Jornada da Larissa em cinco fases, da decisão de organizar um evento à troca de experiências, com curva de emoções", "Jornada da Larissa."),
          ]},
-        {"title": "Busca CEP para Todos", "html": """
-<p>O CEP para Todos é uma iniciativa da SNP com os Correios que leva endereço postal formal a favelas e comunidades urbanas do Brasil. Ter CEP muda coisas básicas: receber correspondência, comprovar residência, fazer compras on-line.</p>
-<p>O desafio era que as pessoas não sabem o CEP novo, mas sabem o nome da comunidade onde moram. Por isso desenhei uma busca que começa pelo que a pessoa já conhece:</p>
-<ul>
-  <li>Filtro por estado e município, e depois pelo nome ou parte do nome da comunidade.</li>
-  <li>Os nomes seguem os registros oficiais do IBGE para Favelas e Comunidades Urbanas, e um aviso no topo explica isso para evitar buscas frustradas.</li>
-  <li>O CEP fica numa coluna destacada, com botão para copiar, porque o próximo passo da pessoa quase sempre é colar o CEP em outro lugar.</li>
-  <li>Quando não há resultado, a tela indica o WhatsApp da equipe em vez de terminar num beco sem saída.</li>
-</ul>
-""",
-         "media": [
-            ("img", "np-cep.webp", "Resultado da Busca CEP para TODOS: três comunidades de João Pessoa com seus CEPs e botão de copiar", "A coluna do CEP é destacada e tem atalho para copiar."),
-         ]},
         {"title": "O que os dados de uso mostram", "html": """
 <p>Com a plataforma no ar, os painéis de dados passaram a mostrar quem de fato se cadastra e onde a experiência perde pessoas. Separei os números que mais pesam nas decisões de design das próximas versões (dados de outubro de 2026).</p>
 <div class="stats">
@@ -88,6 +75,22 @@ PROJECTS = {
   <li><strong>Experiência que se sustenta sozinha.</strong> Os cadastros chegam em ondas grandes. Com dezenas de milhares de pessoas entrando na mesma semana, cada tela precisa se explicar sem depender de suporte, e a maioria das pessoas cadastradas é adulta, com pouco tempo, o que reforça textos curtos e caminhos diretos.</li>
 </ul>
 """},
+        {"title": "Busca CEP para Todos", "html": """
+<p>O CEP para Todos é uma iniciativa da SNP com os Correios que leva endereço postal formal a favelas e comunidades urbanas do Brasil. Ter CEP muda coisas básicas: receber correspondência, comprovar residência, fazer compras on-line.</p>
+<p>O desafio era que as pessoas não sabem o CEP novo, mas sabem o nome da comunidade onde moram. Por isso desenhei uma busca que começa pelo que a pessoa já conhece:</p>
+<ul>
+  <li>Filtro por estado e município, e depois pelo nome ou parte do nome da comunidade.</li>
+  <li>Os nomes seguem os registros oficiais do IBGE para Favelas e Comunidades Urbanas, e um aviso no topo explica isso para evitar buscas frustradas.</li>
+  <li>O CEP fica numa coluna destacada, com botão para copiar, porque o próximo passo da pessoa quase sempre é colar o CEP em outro lugar.</li>
+  <li>Quando não há resultado, a tela indica o WhatsApp da equipe em vez de terminar num beco sem saída.</li>
+</ul>
+""",
+         "media": [
+            ("pair", [
+                ("np-cep-celular.webp", "Celular mostrando a Busca CEP para TODOS com os filtros de UF, município e comunidade urbana, sob o anúncio de 100% das favelas e comunidades urbanas com CEP"),
+                ("np-cep-notebook.webp", "Notebook com a Busca CEP para TODOS mostrando três comunidades de João Pessoa e seus CEPs na coluna destacada"),
+            ], "A busca no celular e no computador."),
+         ]},
     ],
 },
 

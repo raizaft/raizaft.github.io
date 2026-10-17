@@ -228,6 +228,11 @@ def render_media(m):
         _, items, cap = m
         imgs = "".join(f'<img src="../assets/img/{s}" alt="{e(a)}" loading="lazy">' for s, a in items)
         return f'<figure class="figure" data-reveal><div class="phones">{imgs}</div><figcaption>{e(cap)}</figcaption></figure>'
+    if kind == "pair":
+        _, items, cap = m
+        imgs = "".join(f'<a class="figure__frame" href="../assets/img/{s}" target="_blank" rel="noopener" data-cursor="Ampliar"><img src="../assets/img/{s}" alt="{e(a)}" loading="lazy"></a>' for s, a in items)
+        c = f"<figcaption>{e(cap)}</figcaption>" if cap else ""
+        return f'<figure class="figure" data-reveal><div class="pair">{imgs}</div>{c}</figure>'
     raise ValueError(kind)
 
 
