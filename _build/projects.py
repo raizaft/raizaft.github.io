@@ -19,6 +19,8 @@ PROJECTS = {
     "cover_alt": "Celular na mão mostrando a tela inicial do Nós Periféricos, com saudação, aviso para completar o cadastro, destaque da Votação Popular e oportunidades",
     "case_cover": "np-capa.webp",
     "case_cover_alt": "Celular na mão mostrando a tela inicial do Nós Periféricos, com saudação, aviso para completar o cadastro, destaque da Votação Popular e oportunidades",
+    "live": ("https://nosperifericos.cidades.gov.br", "nosperifericos.cidades.gov.br"),
+    "live_label": "Conheça a plataforma no ar",
     "meta": [
         ("Papel", "UX/UI Designer"),
         ("Cliente", "Secretaria Nacional de Periferias"),
@@ -56,10 +58,10 @@ PROJECTS = {
             ("img", "np-jornada-larissa.webp", "Jornada da Larissa em cinco fases, da decisão de organizar um evento à troca de experiências, com curva de emoções", "Jornada da Larissa."),
          ]},
         {"title": "Arquitetura de informação", "html": """
-<p>A navegação foi organizada em três partes. A barra superior reúne o que qualquer pessoa pode acessar sem cadastro, como o mapa interativo, a Busca CEP para TODOS e as páginas institucionais. O menu lateral concentra a área de quem está logado: iniciativas, oportunidades, cursos, mapeamento popular, contato e painéis. No rodapé do menu ficam o perfil e a saída da conta.</p>
+<p>A navegação foi organizada em três partes. A barra superior reúne o que qualquer pessoa pode acessar sem cadastro, como o mapa interativo, a Busca CEP para TODOS e as páginas institucionais. O menu lateral concentra a área de quem está logado: iniciativas, oportunidades, cursos, mapeamento popular e contato. No rodapé do menu ficam o perfil e a saída da conta.</p>
 """,
          "media": [
-            ("img", "np-sitemap.webp", "Mapa do site do Nós Periféricos: a página inicial se divide em barra superior (mapa interativo, sobre o Nós Periféricos, sobre a SNP, Busca CEP para TODOS), menu lateral da área logada (início, minhas iniciativas, mural de oportunidades, meus cursos, mapeamento popular, entre em contato, meus painéis) e conta (perfil, sair)", "Mapa do site."),
+            ("img", "np-sitemap.webp", "Mapa do site do Nós Periféricos: a página inicial se divide em barra superior (mapa interativo, sobre o Nós Periféricos, sobre a SNP, Busca CEP para TODOS), menu lateral da área logada (início, minhas iniciativas, mural de oportunidades, meus cursos, mapeamento popular, entre em contato) e conta (perfil, sair)", "Mapa do site."),
          ]},
         {"title": "O que os dados de uso mostram", "html": """
 <p>Com a plataforma no ar, os painéis de dados passaram a mostrar quem de fato se cadastra e onde a experiência perde pessoas. Separei os números que mais pesam nas decisões de design das próximas versões (dados de outubro de 2026).</p>
@@ -581,6 +583,8 @@ PROJECTS = {
     "cover_alt": "Telas do site do LabRua em celulares e notebook sobre fundo roxo, com o logotipo no canto",
     "case_cover": "labrua-capa.webp",
     "case_cover_alt": "Telas do site do LabRua em celulares e notebook sobre fundo roxo, com o logotipo no canto",
+    "live": ("https://labrua.org", "labrua.org"),
+    "live_label": "Conheça o site no ar",
     "meta": [
         ("Papel", "UI Designer"),
         ("Cliente", "LabRua"),
