@@ -91,7 +91,6 @@ def build_index():
     <a class="feature" href="projetos/{slug}.html">
       <div class="feature__media" data-reveal="clip" data-cursor="Ver estudo de caso"><img src="assets/img/{d['cover']}" alt="{e(d['cover_alt'])}" width="1600" height="900" loading="lazy"></div>
       <div data-reveal>
-        <p class="feature__client">{e(d['client'])}</p>
         <h3 class="feature__title">{e(d['title'])}</h3>
         <p class="feature__text">{e(d['summary'])}</p>
         {tags(d['tags'])}
