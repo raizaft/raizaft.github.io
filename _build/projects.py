@@ -62,38 +62,6 @@ PROJECTS = {
             ("img", "np-jornada-larissa.webp", "Jornada da Larissa em cinco fases, da decisão de organizar um evento à troca de experiências, com curva de emoções", "Jornada da Larissa."),
             ("img", "np-jornada-marcos.webp", "Jornada do Marcos em cinco fases, do lançamento de um curso ao contato com os usuários, com curva de emoções", "Jornada do Marcos."),
          ]},
-        {"title": "Priorização", "html": """
-<p>As oportunidades das jornadas foram organizadas numa Matriz de Impacto x Esforço. As de alto impacto e fácil implementação, como catálogo de iniciativas, mural de oportunidades atualizado, segmentação de contatos para extração em CSV e convite para grupos de WhatsApp, entraram primeiro. As estratégicas, como gerenciamento de permissões, espaços temáticos, fóruns e conquistas, foram planejadas para as entregas seguintes.</p>
-""",
-         "media": [
-            ("img", "np-matriz.webp", "Matriz de Impacto x Esforço com as funcionalidades distribuídas entre essencial, estratégico, indiferente e luxo", "Matriz de Impacto x Esforço."),
-         ]},
-        {"title": "Entregas", "html": """
-<p>A partir da priorização, a plataforma foi construída em módulos e lançada em etapas:</p>
-<ol>
-  <li><b>Primeira etapa:</b> convite para grupos de WhatsApp no cadastro, módulo de permissões para diferenciar gestores e demais usuários e votação popular.</li>
-  <li><b>Segunda etapa:</b> espaços temáticos, Mapeamento Popular e conquistas.</li>
-  <li><b>Terceira etapa:</b> módulo de comunicação, com segmentação e extração de contatos em CSV, módulo de cursos e desafios.</li>
-  <li><b>Em avaliação:</b> calendário e favoritos.</li>
-</ol>
-<h3>Manter a plataforma viva</h3>
-<p>Para garantir constância de cadastros e uso, o produto veio acompanhado de estratégias de comunicação, como newsletter com novas oportunidades, lançamento por módulos, divulgação nas Caravanas e oficinas, vídeos tutoriais e um manual do usuário. Na plataforma, funcionalidades como o mural sempre atualizado, o catálogo de iniciativas, o destaque para iniciativas engajadas e a possibilidade de adicionar membros à iniciativa estimulam o retorno e o sentimento de pertencimento.</p>
-"""},
-        {"title": "O que desenhei", "html": """
-<h3>Uma área para cada iniciativa</h3>
-<p>Ao entrar, a pessoa vê as oportunidades abertas, acessa a página da sua iniciativa, os cursos em que está inscrita e o Mapeamento Popular. A navegação lateral mantém essas áreas sempre a um toque.</p>
-<h3>Mural de oportunidades</h3>
-<p>Editais, cursos e atividades ficam num só mural, com filtros simples e o status de inscrição em destaque em cada cartão (em breve, aberta, encerrada), que é a primeira coisa que a pessoa quer saber.</p>
-<h3>Espaços temáticos</h3>
-<p>Temas como adaptação climática e geração cidadã de dados ganharam páginas próprias, que explicam como participar em três passos e reúnem projetos e oportunidades daquele tema.</p>
-<h3>Área de gestão</h3>
-<p>Para a equipe da SNP, uma área separada para gerenciar permissões e acompanhar as iniciativas cadastradas.</p>
-""",
-         "media": [
-            ("img", "np-mural.webp", "Mural de oportunidades com filtros e cartões de editais com o status de inscrição", "Mural de oportunidades: o status de inscrição aparece primeiro em cada cartão."),
-            ("img", "np-espacos.webp", "Página de Espaços Temáticos com vídeo, temas e o passo a passo de como participar", "Espaços temáticos explicam como participar antes de pedir qualquer ação."),
-            ("phones", [("np-mobile-home.webp", "Início da área do usuário no celular, com oportunidades e atalhos para cursos, editais e publicações")], "No celular, o início prioriza a oportunidade em aberto e o que falta no cadastro."),
-         ]},
         {"title": "Busca CEP para Todos", "html": """
 <p>O CEP para Todos é uma iniciativa da SNP com os Correios que leva endereço postal formal a favelas e comunidades urbanas do Brasil. Ter CEP muda coisas básicas: receber correspondência, comprovar residência, fazer compras on-line.</p>
 <p>O desafio era que as pessoas não sabem o CEP novo, mas sabem o nome da comunidade onde moram. Por isso desenhei uma busca que começa pelo que a pessoa já conhece:</p>
