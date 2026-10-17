@@ -77,6 +77,26 @@ PROJECTS = {
          "media": [
             ("img", "np-cep.webp", "Resultado da Busca CEP para TODOS: três comunidades de João Pessoa com seus CEPs e botão de copiar", "A coluna do CEP é destacada e tem atalho para copiar."),
          ]},
+        {"title": "O que os dados de uso mostram", "html": """
+<p>Com a plataforma no ar, os painéis de dados passaram a mostrar quem de fato se cadastra e onde a experiência perde pessoas. Separei os números que mais pesam nas decisões de design das próximas versões (dados de outubro de 2026).</p>
+<div class="stats">
+  <div class="stat"><b>55 mil</b><span>pessoas cadastradas desde o lançamento, com picos de mais de 30 mil cadastros numa única semana</span></div>
+  <div class="stat"><b>12%</b><span>dos cadastros estão completos; os campos que ficam vazios são justamente os da segunda etapa, como WhatsApp, município e data de nascimento</span></div>
+  <div class="stat"><b>2%</b><span>das pessoas cadastradas registraram uma iniciativa; a grande maioria chega como pessoa, buscando cursos e oportunidades</span></div>
+  <div class="stat"><b>83%</b><span>das pessoas cadastradas têm entre 25 e 59 anos</span></div>
+  <div class="stat"><b>40%</b><span>das iniciativas mapeadas são coletivos de pessoas físicas, sem CNPJ</span></div>
+  <div class="stat"><b>57%</b><span>das iniciativas apontam a burocracia para receber recursos como a principal dificuldade jurídica</span></div>
+  <div class="stat"><b>50%</b><span>das iniciativas funcionam com orçamento de até R$ 10 mil por ano</span></div>
+  <div class="stat"><b>60%</b><span>das iniciativas não têm ninguém dedicado à captação de recursos</span></div>
+</div>
+<h3>O que isso pede do design</h3>
+<ul>
+  <li><strong>Cadastro que não para no meio.</strong> Quase nove em cada dez perfis ficam incompletos depois da primeira etapa. Pedir a localização logo no início, explicando que ela serve para mostrar oportunidades do território da pessoa, e lembrar do que falta no próprio painel tende a recuperar mais cadastros do que uma etapa extra.</li>
+  <li><strong>A pessoa antes da iniciativa.</strong> Como quase todo mundo entra como pessoa, a página inicial precisa entregar cursos e oportunidades logo de cara, e o cadastro de iniciativa funciona melhor como um convite no momento certo do que como pré-requisito.</li>
+  <li><strong>Linguagem para quem não tem assessoria.</strong> Iniciativas pequenas, informais e sem alguém dedicado a captar recursos esbarram em CNPJ, documentos e editais difíceis de entender. Filtrar oportunidades que aceitam grupos sem CNPJ e explicar cada edital em linguagem simples, com a lista de documentos necessários, atacam as maiores dificuldades citadas.</li>
+  <li><strong>Experiência que se sustenta sozinha.</strong> Os cadastros chegam em ondas grandes. Com dezenas de milhares de pessoas entrando na mesma semana, cada tela precisa se explicar sem depender de suporte, e a maioria das pessoas cadastradas é adulta, com pouco tempo, o que reforça textos curtos e caminhos diretos.</li>
+</ul>
+"""},
     ],
 },
 
