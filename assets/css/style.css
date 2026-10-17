@@ -416,6 +416,7 @@ h1, h2, h3 {
 .orbit ellipse { fill: none; stroke: var(--cobalt); stroke-width: 1.5px; vector-effect: non-scaling-stroke; }
 .orbit--back { z-index: 0; }
 .orbit--front { z-index: 2; }
+@media (max-width: 700px) { .hero__photo { width: 30vw; margin-top: 1vw; } }
 @media (prefers-reduced-motion: no-preference) {
   .js .hero__photo { opacity: 0; transform: scale(.96); transition: opacity 1s var(--ease) .25s, transform 1.2s var(--ease) .25s; }
   .js .hero__photo.is-loaded { opacity: 1; transform: none; }

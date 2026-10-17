@@ -95,9 +95,9 @@
     });
   }
 
-  // Órbita da foto acompanha o mouse
+  // Órbita da foto: segue o mouse no computador e a rolagem no celular
   var orbits = document.querySelectorAll('.orbit__g');
-  if (orbits.length && fine && !reduce) {
+  if (orbits.length && !reduce) {
     var tx = 0, ty = 0, cx = 0, cy = 0, orbitRaf = null;
     var ellipses = document.querySelectorAll('.orbit ellipse');
     function orbitLoop() {
@@ -108,11 +108,21 @@
       if (Math.abs(tx - cx) > 0.001 || Math.abs(ty - cy) > 0.001) orbitRaf = requestAnimationFrame(orbitLoop);
       else orbitRaf = null;
     }
-    window.addEventListener('mousemove', function (ev) {
-      tx = ev.clientX / window.innerWidth * 2 - 1;
-      ty = ev.clientY / window.innerHeight * 2 - 1;
-      if (!orbitRaf) orbitRaf = requestAnimationFrame(orbitLoop);
-    }, { passive: true });
+    function kick() { if (!orbitRaf) orbitRaf = requestAnimationFrame(orbitLoop); }
+    if (fine) {
+      window.addEventListener('mousemove', function (ev) {
+        tx = ev.clientX / window.innerWidth * 2 - 1;
+        ty = ev.clientY / window.innerHeight * 2 - 1;
+        kick();
+      }, { passive: true });
+    } else {
+      window.addEventListener('scroll', function () {
+        var y = window.scrollY;
+        tx = Math.sin(y / 160);
+        ty = Math.cos(y / 240) * 0.8 - 0.8;
+        kick();
+      }, { passive: true });
+    }
   }
 
   // Copiar e-mail
