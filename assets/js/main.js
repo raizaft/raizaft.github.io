@@ -95,6 +95,26 @@
     });
   }
 
+  // Órbita da foto acompanha o mouse
+  var orbits = document.querySelectorAll('.orbit__g');
+  if (orbits.length && fine && !reduce) {
+    var tx = 0, ty = 0, cx = 0, cy = 0, orbitRaf = null;
+    var ellipses = document.querySelectorAll('.orbit ellipse');
+    function orbitLoop() {
+      cx += (tx - cx) * 0.08; cy += (ty - cy) * 0.08;
+      var ang = (-16 + cx * 28).toFixed(2), ry = (20 + cy * 10).toFixed(2);
+      orbits.forEach(function (g) { g.setAttribute('transform', 'rotate(' + ang + ')'); });
+      ellipses.forEach(function (e) { e.setAttribute('ry', ry); });
+      if (Math.abs(tx - cx) > 0.001 || Math.abs(ty - cy) > 0.001) orbitRaf = requestAnimationFrame(orbitLoop);
+      else orbitRaf = null;
+    }
+    window.addEventListener('mousemove', function (ev) {
+      tx = ev.clientX / window.innerWidth * 2 - 1;
+      ty = ev.clientY / window.innerHeight * 2 - 1;
+      if (!orbitRaf) orbitRaf = requestAnimationFrame(orbitLoop);
+    }, { passive: true });
+  }
+
   // Copiar e-mail
   document.querySelectorAll('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
