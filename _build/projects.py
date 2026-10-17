@@ -39,9 +39,6 @@ PROJECTS = {
   <li>Dar autonomia à equipe da Secretaria para acessar e acompanhar as informações da rede, tornando o trabalho mais eficiente.</li>
 </ul>
 """},
-        {"title": "Meu papel", "html": """
-<p>Criei a plataforma do zero, da arquitetura de informação às telas finais, e conduzi pesquisas de usabilidade com pessoas usuárias ao longo do processo. Também desenhei a área de gestão usada pela equipe da SNP e as versões para celular.</p>
-"""},
         {"title": "Personas", "html": """
 <p>Para manter as pessoas usuárias no centro do projeto desde o início, criei duas personas que representam os dois lados da plataforma: quem lidera uma iniciativa e quem a gerencia dentro da Secretaria. Elas ajudaram a humanizar os dados e a deixar claro, para toda a equipe, para quem o sistema é feito.</p>
 <h3>Larissa Oliveira, responsável por iniciativa</h3>
