@@ -114,7 +114,10 @@ def build_index():
                "", "cover-nos-perifericos.webp")
     out += f"""
 <section class="hero"><div class="wrap">
+  <div class="hero__top">
   <h1 class="hero__name" data-load aria-label="Raiza Tomazoni"><span class="line" aria-hidden="true"><span>Raiza</span></span><span class="line" aria-hidden="true"><span>Tomazoni</span></span></h1>
+  <figure class="hero__photo" data-load><img src="assets/img/raiza.webp" alt="Retrato em preto e branco de Raiza Tomazoni, sorrindo, com cabelo cacheado" width="800" height="800"></figure>
+  </div>
   <div class="hero__grid">
     <p class="hero__lede" data-reveal>Designer de produto e UX. Desenho serviços públicos e produtos digitais que as pessoas conseguem usar sem precisar pedir ajuda.</p>
     <div data-reveal>
