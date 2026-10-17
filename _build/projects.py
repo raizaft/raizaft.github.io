@@ -40,26 +40,20 @@ PROJECTS = {
 </ul>
 """},
         {"title": "Personas", "html": """
-<p>Para manter as pessoas usuárias no centro do projeto desde o início, criei duas personas que representam os dois lados da plataforma: quem lidera uma iniciativa e quem a gerencia dentro da Secretaria. Elas ajudaram a humanizar os dados e a deixar claro, para toda a equipe, para quem o sistema é feito.</p>
+<p>Para manter as pessoas usuárias no centro do projeto desde o início, criei uma persona que representa quem lidera uma iniciativa periférica. Ela ajudou a humanizar os dados e a deixar claro, para toda a equipe, para quem o sistema é feito.</p>
 <h3>Larissa Oliveira, responsável por iniciativa</h3>
 <p>Lidera uma iniciativa periférica e quer fortalecer sua atuação com informações relevantes para o território e com a divulgação da iniciativa em nível regional e nacional. Gasta tempo procurando conteúdos, perde editais e eventos por não saber que aconteceriam e tem colaboradores com vontade de ajudar, mas pouca capacitação.</p>
-<h3>Marcos Andrade, técnico da SNP</h3>
-<p>Atua em programas e ações do governo e precisa inserir e extrair dados da plataforma. Depende do setor de tecnologia para publicar oportunidades e conseguir contatos de usuários, e quer garantir que as informações da rede estejam sempre corretas.</p>
 """,
          "media": [
             ("img", "np-persona-larissa.webp", "Persona Larissa Oliveira, responsável por iniciativa, com citação, descrição, desafios e objetivos", "Persona Larissa Oliveira."),
-            ("img", "np-persona-marcos.webp", "Persona Marcos Andrade, técnico da SNP, com citação, descrição, desafios e objetivos", "Persona Marcos Andrade."),
          ]},
-        {"title": "Jornadas do usuário", "html": """
-<p>As jornadas mostram o caminho que cada persona percorria sem a plataforma, fase por fase: o que faz, o que pensa e sente, e as oportunidades que cada momento abre para a plataforma.</p>
+        {"title": "Jornada do usuário", "html": """
+<p>A jornada mostra o caminho que a Larissa percorria sem a plataforma, fase por fase: o que faz, o que pensa e sente, e as oportunidades que cada momento abre para a plataforma.</p>
 <h3>Larissa: encontrar iniciativas parecidas</h3>
 <p>Larissa quer organizar um evento e conhecer iniciativas que atuam na mesma temática, mas não sabe por onde começar a busca e não confia nas informações que encontra. Daí surgiram oportunidades como um catálogo de iniciativas, agrupamento por temática e região, perfis completos das iniciativas e espaços de discussão.</p>
-<h3>Marcos: publicar uma oportunidade</h3>
-<p>Para divulgar um novo curso, Marcos precisa pedir ao time de tecnologia que publique no mural, revisar tudo depois e pedir de novo uma planilha de contatos. Daí surgiram oportunidades como dar mais autonomia ao gestor e a busca de contatos com filtros e exportação em CSV.</p>
 """,
          "media": [
             ("img", "np-jornada-larissa.webp", "Jornada da Larissa em cinco fases, da decisão de organizar um evento à troca de experiências, com curva de emoções", "Jornada da Larissa."),
-            ("img", "np-jornada-marcos.webp", "Jornada do Marcos em cinco fases, do lançamento de um curso ao contato com os usuários, com curva de emoções", "Jornada do Marcos."),
          ]},
         {"title": "Busca CEP para Todos", "html": """
 <p>O CEP para Todos é uma iniciativa da SNP com os Correios que leva endereço postal formal a favelas e comunidades urbanas do Brasil. Ter CEP muda coisas básicas: receber correspondência, comprovar residência, fazer compras on-line.</p>
