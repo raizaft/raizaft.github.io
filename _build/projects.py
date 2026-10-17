@@ -16,7 +16,9 @@ PROJECTS = {
     "lede": "Uma plataforma federal criada do zero para que iniciativas das periferias encontrem editais, cursos e oportunidades, e uma busca que entrega o CEP oficial de favelas e comunidades a partir do nome do lugar onde a pessoa mora.",
     "tags": ["UX Research", "UX/UI Design", "Governo", "Web e mobile"],
     "cover": "cover-nos-perifericos.webp",
-    "cover_alt": "Tela da Busca CEP para TODOS na plataforma Nós Periféricos, com filtros de UF, município e comunidade e tabela de resultados",
+    "cover_alt": "Notebook com a tela inicial da plataforma Nós Periféricos, com atalhos, oportunidades e iniciativas",
+    "case_cover": "np-capa.webp",
+    "case_cover_alt": "Notebook com a tela inicial da plataforma Nós Periféricos, com atalhos, oportunidades e iniciativas",
     "meta": [
         ("Papel", "UX/UI Designer"),
         ("Cliente", "Secretaria Nacional de Periferias"),
