@@ -118,7 +118,7 @@ def build_index():
   <figure class="hero__photo" data-load><svg class="orbit orbit--back" viewBox="-75 -75 150 150" aria-hidden="true"><g class="orbit__g" transform="rotate(-16)"><ellipse rx="70" ry="20"/></g></svg><img src="assets/img/raiza.webp" alt="Retrato em preto e branco de Raiza Tomazoni, sorrindo, com cabelo cacheado" width="800" height="800"><svg class="orbit orbit--front" viewBox="-75 -75 150 150" aria-hidden="true"><defs><clipPath id="orbit-low" clipPathUnits="userSpaceOnUse"><rect x="-80" y="0" width="160" height="80"/></clipPath></defs><g class="orbit__g" transform="rotate(-16)"><ellipse rx="70" ry="20" clip-path="url(#orbit-low)"/></g></svg></figure>
   </div>
   <div class="hero__grid">
-    <p class="hero__lede" data-reveal>Designer de produto e UX. Desenho serviços públicos e produtos digitais que as pessoas conseguem usar sem precisar pedir ajuda.</p>
+    <p class="hero__lede" data-reveal>UX/UI e Product Designer. Transformo necessidades reais em produtos digitais simples de usar.</p>
     <div data-reveal>
       <div class="hero__cta">
         <a class="btn btn--solid" href="#projetos">Ver projetos</a>
