@@ -120,7 +120,7 @@ def build_index():
   <div class="hero__grid">
     <p class="hero__lede" data-reveal>UX/UI e Product Designer. Transformo necessidades reais em produtos digitais simples de usar.</p>
     <div data-reveal>
-      <p class="hero__now"><strong>4+ anos de experiência</strong> unificando 3 áreas: design, arquitetura e tecnologia.</p>
+      <p class="hero__now"><strong>4+ anos de experiência</strong> unificando três áreas: design, arquitetura e tecnologia.</p>
       <div class="hero__cta">
         <a class="btn" href="#contato">Falar comigo</a>
       </div>
