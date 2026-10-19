@@ -118,7 +118,10 @@ def build_index():
   <figure class="hero__photo" data-load><svg class="orbit orbit--back" viewBox="-75 -75 150 150" aria-hidden="true"><g class="orbit__g" transform="rotate(-16)"><ellipse rx="70" ry="20"/></g></svg><img src="assets/img/raiza.webp" alt="Retrato em preto e branco de Raiza Tomazoni, sorrindo, com cabelo cacheado" width="800" height="800"><svg class="orbit orbit--front" viewBox="-75 -75 150 150" aria-hidden="true"><defs><clipPath id="orbit-low" clipPathUnits="userSpaceOnUse"><rect x="-80" y="0" width="160" height="80"/></clipPath></defs><g class="orbit__g" transform="rotate(-16)"><ellipse rx="70" ry="20" clip-path="url(#orbit-low)"/></g></svg></figure>
   </div>
   <div class="hero__grid">
-    <p class="hero__lede" data-reveal>UX/UI e Product Designer. Transformo necessidades reais em produtos digitais simples de usar.</p>
+    <div data-reveal>
+      <p class="hero__lede">UX/UI e Product Designer. Transformo necessidades reais em produtos digitais simples de usar.</p>
+      <a class="hero__scroll" href="#projetos"><span class="hero__scroll-text">Role para ver os projetos</span><span class="hero__scroll-arrow" aria-hidden="true">↓</span></a>
+    </div>
     <div data-reveal>
       <p class="hero__now"><strong>4+ anos de experiência</strong> unificando três áreas: design, arquitetura e tecnologia.</p>
       <div class="hero__cta">
@@ -126,7 +129,6 @@ def build_index():
       </div>
     </div>
   </div>
-  <a class="hero__scroll" href="#projetos"><span>Role para ver os projetos</span><span class="hero__scroll-arrow" aria-hidden="true">↓</span></a>
 </div></section>
 
 <div class="marquee" aria-hidden="true"><div class="marquee__track">{words}{words}{words}{words}</div></div>

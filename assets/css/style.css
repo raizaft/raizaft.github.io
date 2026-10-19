@@ -426,10 +426,11 @@ h1, h2, h3 {
 .hero__cta:first-child { margin-top: 0; }
 
 /* Convite para rolar */
-.hero__scroll { display: flex; align-items: center; gap: 12px; width: max-content; margin: clamp(40px, 5vw, 64px) auto 0; font-size: var(--f-md, 1.0625rem); font-weight: 500; color: var(--ink); text-decoration: none; }
-.hero__scroll-arrow { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; border: 1.5px solid var(--cobalt); color: var(--cobalt); font-size: .95rem; transition: background .25s, color .25s; }
+.hero__scroll { display: inline-flex; align-items: center; gap: 10px; margin-top: 26px; font-size: var(--f-md); font-weight: 500; line-height: 1; color: var(--ink); text-decoration: none; }
+.hero__scroll-text { display: block; line-height: 1; padding-top: .08em; }
+.hero__scroll-arrow { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; border: 1.5px solid var(--cobalt); color: var(--cobalt); font-size: .8rem; line-height: 1; transition: background .25s, color .25s; }
 .hero__scroll:hover .hero__scroll-arrow, .hero__scroll:focus-visible .hero__scroll-arrow { background: var(--cobalt); color: #fff; }
 @media (prefers-reduced-motion: no-preference) {
   .hero__scroll-arrow { animation: nudge 1.8s var(--ease) infinite; }
-  @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(4px); } }
+  @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(3px); } }
 }
