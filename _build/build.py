@@ -47,6 +47,8 @@ def head(title, desc, prefix, image=None, progress=False):
 {og}
 <meta name="theme-color" content="#f3f4f5">
 <link rel="icon" href="{prefix}assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{prefix}assets/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 {FONT}
 <link rel="stylesheet" href="{prefix}assets/css/style.css?v={V}">
 <script>document.documentElement.classList.add('js')</script>
