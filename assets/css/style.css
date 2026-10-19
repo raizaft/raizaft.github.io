@@ -425,17 +425,11 @@ h1, h2, h3 {
 }
 .hero__cta:first-child { margin-top: 0; }
 
-/* Informações rápidas e convite para rolar */
-.hero__grid .hero__cta { margin-top: 28px; }
-.hero__facts { display: grid; grid-template-columns: auto 1fr; gap: 20px 18px; margin: 0; align-self: end; }
-.hero__facts > div { display: contents; }
-.hero__facts dt { font-family: var(--display); font-weight: 800; font-variation-settings: "opsz" 96, "wdth" 80; font-size: clamp(3rem, 6vw, 4.75rem); line-height: .85; letter-spacing: -0.02em; }
-.hero__facts dd { margin: 0; align-self: end; font-size: var(--f-sm); line-height: 1.4; color: var(--muted); max-width: 22ch; padding-bottom: .2em; }
-.hero__scroll { display: inline-flex; align-items: center; gap: 10px; margin-top: clamp(40px, 6vw, 72px); font-size: var(--f-sm); color: var(--muted); text-decoration: none; }
-.hero__scroll:hover { color: var(--ink); }
-.hero__scroll-arrow { display: inline-grid; place-items: center; width: 32px; height: 32px; border-radius: 50%; border: 1.5px solid var(--cobalt); color: var(--cobalt); font-size: .9rem; }
-@media (min-width: 860px) { .hero__scroll { float: right; } .hero .wrap::after { content: ""; display: block; clear: both; } }
+/* Convite para rolar */
+.hero__scroll { display: flex; flex-direction: column; align-items: center; gap: 14px; width: max-content; margin: clamp(40px, 5vw, 64px) auto 0; font-size: var(--f-md, 1.0625rem); font-weight: 500; color: var(--ink); text-decoration: none; }
+.hero__scroll-arrow { display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 1.5px solid var(--cobalt); color: var(--cobalt); font-size: 1.25rem; transition: background .25s, color .25s; }
+.hero__scroll:hover .hero__scroll-arrow, .hero__scroll:focus-visible .hero__scroll-arrow { background: var(--cobalt); color: #fff; }
 @media (prefers-reduced-motion: no-preference) {
   .hero__scroll-arrow { animation: nudge 1.8s var(--ease) infinite; }
-  @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(6px); } }
+  @keyframes nudge { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
 }
