@@ -111,7 +111,7 @@ def build_index():
     words = "".join(f"<span>{e(w)}</span>" for w in MARQUEE)
 
     out = head("Raiza Tomazoni — UX/UI e Product Designer",
-               "Portfólio de Raiza Tomazoni, designer de produto e UX com formação em Arquitetura e Urbanismo. Projetos para a Secretaria Nacional de Periferias, SUDEMA-PB e outros.",
+               "Portfólio de produtos digitais simples de usar, pensados a partir de necessidades reais.",
                "", "cover-nos-perifericos.webp")
     out += f"""
 <section class="hero"><div class="wrap">
