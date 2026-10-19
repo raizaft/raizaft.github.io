@@ -12,8 +12,8 @@ PROJECTS = {
     "title": "Nós Periféricos",
     "card_line": "Plataforma federal para iniciativas das periferias e a busca do CEP oficial de favelas e comunidades.",
     "client": "Secretaria Nacional de Periferias, Ministério das Cidades",
-    "summary": "Plataforma criada do zero para iniciativas das periferias encontrarem editais, cursos e oportunidades do governo federal, e a busca que leva o CEP do programa CEP para Todos a quem mora em favelas e comunidades.",
-    "lede": "Uma plataforma federal criada do zero para que iniciativas das periferias encontrem editais, cursos e oportunidades, e uma busca que entrega o CEP oficial de favelas e comunidades a partir do nome do lugar onde a pessoa mora.",
+    "summary": "Plataforma para iniciativas das periferias encontrarem editais, cursos e oportunidades do governo federal, e a busca que leva o CEP do programa CEP para Todos a quem mora em favelas e comunidades.",
+    "lede": "Uma plataforma federal para que iniciativas das periferias encontrem editais, cursos e oportunidades, e uma busca que entrega o CEP oficial de favelas e comunidades a partir do nome do lugar onde a pessoa mora.",
     "tags": ["UX Research", "UX/UI Design", "Governo", "Web e mobile"],
     "cover": "cover-nos-perifericos.webp",
     "cover_alt": "Celular na mão mostrando a tela inicial do Nós Periféricos, com saudação, aviso para completar o cadastro, destaque da Votação Popular e oportunidades",
@@ -31,7 +31,7 @@ PROJECTS = {
         {"title": "O desafio", "html": """
 <p>A Secretaria Nacional de Periferias (SNP) mantém programas, editais, cursos e ações voltados a favelas e comunidades urbanas de todo o país, mas não existia um lugar único onde as iniciativas periféricas pudessem se cadastrar, encontrar o que se aplica à sua realidade e se conectar entre si.</p>
 <p>A informação circulava por redes sociais, grupos de WhatsApp e contatos pessoais. Quem liderava uma iniciativa não tinha como conhecer outras que atuam na mesma temática, e a equipe da Secretaria dependia de processos manuais e do time de tecnologia para divulgar oportunidades e falar com as pessoas certas.</p>
-<p>O Nós Periféricos nasceu para resolver isso: uma rede digital criada do zero para ampliar o alcance das iniciativas, fortalecer comunidades periféricas e promover conexões entre pessoas e territórios, funcionando como um espaço vivo de interação, aprendizado e colaboração.</p>
+<p>O Nós Periféricos nasceu para resolver isso: uma rede digital para ampliar o alcance das iniciativas, fortalecer comunidades periféricas e promover conexões entre pessoas e territórios, funcionando como um espaço vivo de interação, aprendizado e colaboração.</p>
 """},
         {"title": "Objetivos", "html": """
 <ul>
