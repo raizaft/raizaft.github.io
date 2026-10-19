@@ -423,3 +423,4 @@ h1, h2, h3 {
   .js .orbit { opacity: 0; transform: rotate(-24deg) scale(.9); transition: opacity 1s var(--ease) .7s, transform 1.6s var(--ease) .7s; }
   .js .hero__photo.is-loaded .orbit { opacity: 1; transform: none; }
 }
+.hero__cta:first-child { margin-top: 0; }

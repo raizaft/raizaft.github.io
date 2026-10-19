@@ -120,7 +120,6 @@ def build_index():
   <div class="hero__grid">
     <p class="hero__lede" data-reveal>Designer de produto e UX. Desenho serviços públicos e produtos digitais que as pessoas conseguem usar sem precisar pedir ajuda.</p>
     <div data-reveal>
-      <p class="hero__now">Hoje no <strong>Ministério das Cidades</strong>, na Secretaria Nacional de Periferias, e na <strong>SUDEMA-PB</strong>. Formada em Arquitetura e Urbanismo pela UFCG.</p>
       <div class="hero__cta">
         <a class="btn btn--solid" href="#projetos">Ver projetos</a>
         <a class="btn" href="#contato">Falar comigo</a>
