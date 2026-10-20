@@ -118,7 +118,7 @@ PROJECTS = {
     "case_cover_alt": "Três celulares com as telas de login, abertura e feed do Rangout, ao lado do logotipo",
     "meta": [
         ("Papel", "UX Designer e designer gráfica"),
-        ("Equipe", '<a href="https://www.linkedin.com/in/gabrielacvcnt" target="_blank" rel="noopener">Gabriela Cavalcante</a>, fundadora e CEO'),
+        ("Cliente", "Gabriela Cavalcante"),
         ("Ano", "2024"),
         ("Plataforma", "App mobile"),
     ],
