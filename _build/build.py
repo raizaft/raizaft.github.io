@@ -51,18 +51,19 @@ def head(title, desc, prefix, image=None, progress=False):
 <link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 {FONT}
 <link rel="stylesheet" href="{prefix}assets/css/style.css?v={V}">
-<script>document.documentElement.classList.add('js')</script>
+<script>(function(){{var d=document.documentElement;d.classList.add('js');var t=null;try{{t=localStorage.getItem('tema')}}catch(e){{}}if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.setAttribute('data-theme',t);document.querySelector('meta[name=theme-color]').setAttribute('content',t==='dark'?'#0e0f11':'#f3f4f5')}})()</script>
 </head>
 <body>
 {bar}
 <a class="skip" href="#conteudo">Pular para o conteúdo</a>
 <header class="nav"><div class="wrap">
   <a class="nav__name" href="{prefix}index.html">Raiza Tomazoni</a>
-  <nav aria-label="Principal"><ul>
+  <div class="nav__right"><nav aria-label="Principal"><ul>
     <li><a class="u" href="{prefix}index.html#projetos">Projetos</a></li>
     <li><a class="u" href="{prefix}index.html#sobre">Sobre</a></li>
     <li><a class="u" href="{prefix}index.html#contato">Contato</a></li>
   </ul></nav>
+  <button class="theme-toggle" type="button" data-theme-toggle aria-label="Mudar para modo escuro"><svg class="i-moon" viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5Z"/></svg><svg class="i-sun" viewBox="0 0 24 24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g></svg></button></div>
 </div></header>
 <main id="conteudo">
 """

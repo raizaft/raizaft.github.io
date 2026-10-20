@@ -145,6 +145,24 @@
     });
   });
 
+  // Alternar modo claro/escuro
+  var tt = document.querySelector('[data-theme-toggle]');
+  function syncToggle() {
+    var dark = root.getAttribute('data-theme') === 'dark';
+    if (tt) tt.setAttribute('aria-label', dark ? 'Mudar para modo claro' : 'Mudar para modo escuro');
+    var m = document.querySelector('meta[name=theme-color]');
+    if (m) m.setAttribute('content', dark ? '#0e0f11' : '#f3f4f5');
+  }
+  if (tt) {
+    syncToggle();
+    tt.addEventListener('click', function () {
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('tema', next); } catch (e) {}
+      syncToggle();
+    });
+  }
+
   // Copiar e-mail
   document.querySelectorAll('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
