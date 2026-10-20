@@ -425,3 +425,19 @@ h1, h2, h3 {
 }
 .hero__cta:first-child { margin-top: 0; }
 
+
+/* Compartilhamento */
+.case-hero__row { display: grid; grid-template-columns: 1fr; gap: 24px; }
+@media (min-width: 860px) { .case-hero__row { grid-template-columns: 1fr auto; align-items: end; gap: 48px; } }
+.share { display: flex; flex-direction: column; gap: 10px; }
+.share__label { font-size: var(--f-sm); color: var(--muted); }
+.share__btns { position: relative; display: flex; align-items: center; gap: 8px; }
+.share__btn { display: inline-grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; border: 1.5px solid currentColor; color: var(--ink); background: transparent; cursor: pointer; padding: 0; transition: background .25s, color .25s, border-color .25s; }
+.share__btn svg { width: 18px; height: 18px; }
+.share__btn:hover, .share__btn:focus-visible { background: var(--cobalt); border-color: var(--cobalt); color: #fff; }
+.share__btn[hidden] { display: none; }
+.share__ok { font-size: var(--f-sm); color: var(--cobalt); margin-left: 6px; }
+.contact__share { margin-top: 56px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,.18); }
+.contact .share__label { color: rgba(255,255,255,.65); }
+.contact .share__btn { color: var(--paper); }
+.contact .share__ok { color: #8fa2ff; }

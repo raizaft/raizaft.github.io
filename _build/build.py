@@ -68,8 +68,9 @@ def head(title, desc, prefix, image=None, progress=False):
 """
 
 
-def foot(prefix):
+def foot(prefix, share=""):
     return f"""</main>
+{share}
 <footer class="foot"><div class="wrap">
   <span>© <span id="ano">2026</span> Raiza Tomazoni</span>
   <a class="u" href="https://www.linkedin.com/in/raizatomazoni/" target="_blank" rel="noopener">linkedin.com/in/raizatomazoni</a>
@@ -78,6 +79,24 @@ def foot(prefix):
 </body>
 </html>
 """
+
+
+ICO_WA = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2c0 1.3 1 2.6 1.1 2.8.1.2 1.9 2.9 4.6 4 1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>'
+ICO_LI = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75Zm6.5 0h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4V9.75Z"/></svg>'
+ICO_LINK = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M10 14a4.5 4.5 0 0 0 6.4 0l3.2-3.2a4.5 4.5 0 0 0-6.4-6.4L12 5.6M14 10a4.5 4.5 0 0 0-6.4 0l-3.2 3.2a4.5 4.5 0 0 0 6.4 6.4l1.2-1.2"/></svg>'
+ICO_SHARE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12M7 8l5-5 5 5M5 13v6a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-6"/></svg>'
+
+
+def share_html(label, text):
+    return (f'<div class="share" data-share data-share-text="{e(text)}">'
+            f'<span class="share__label">{e(label)}</span>'
+            f'<div class="share__btns">'
+            f'<button class="share__btn share__native" type="button" data-share-native aria-label="Compartilhar" hidden>{ICO_SHARE}</button>'
+            f'<a class="share__btn" data-share-wa href="#" target="_blank" rel="noopener" aria-label="Compartilhar no WhatsApp">{ICO_WA}</a>'
+            f'<a class="share__btn" data-share-li href="#" target="_blank" rel="noopener" aria-label="Compartilhar no LinkedIn">{ICO_LI}</a>'
+            f'<button class="share__btn" type="button" data-share-copy aria-label="Copiar link">{ICO_LINK}</button>'
+            f'<span class="share__ok" role="status" aria-live="polite"></span>'
+            f'</div></div>')
 
 
 def tags(items):
@@ -210,6 +229,7 @@ def build_index():
     <a class="btn" href="https://www.linkedin.com/in/raizatomazoni/" target="_blank" rel="noopener">LinkedIn</a>
     <a class="btn" href="{WHATS}" target="_blank" rel="noopener">WhatsApp</a>
   </div>
+  <div class="contact__share" data-reveal>{share_html("Compartilhar portfólio", "Portfólio de Raiza Tomazoni, UX/UI e Product Designer")}</div>
 </div></section>
 """
     out += foot("")
@@ -266,7 +286,10 @@ def build_case(slug, nxt):
 <section class="case-hero"><div class="wrap">
   <a class="back" href="../index.html#projetos"><span aria-hidden="true">←</span> Voltar para projetos</a>
   <h1 data-load><span class="line"><span>{e(d['title'])}</span></span></h1>
-  <p class="lede" data-reveal>{e(d['lede'])}</p>
+  <div class="case-hero__row">
+    <p class="lede" data-reveal>{e(d['lede'])}</p>
+    <div data-reveal>{share_html("Compartilhar projeto", d['title'] + " — estudo de caso de Raiza Tomazoni")}</div>
+  </div>
   <dl class="meta" data-reveal>{meta}</dl>
 </div></section>
 <div class="wrap case-cover"><div class="case-cover__frame" data-reveal="clip"><img src="../assets/img/{d.get('case_cover', d['cover'])}" alt="{e(d.get('case_cover_alt', d['cover_alt']))}"></div></div>

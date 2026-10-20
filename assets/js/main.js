@@ -125,6 +125,26 @@
     }
   }
 
+  // Compartilhar: WhatsApp, LinkedIn, copiar link e compartilhamento nativo no celular
+  document.querySelectorAll('[data-share]').forEach(function (box) {
+    var url = location.origin + location.pathname;
+    var text = box.getAttribute('data-share-text') || document.title;
+    var wa = box.querySelector('[data-share-wa]'), li = box.querySelector('[data-share-li]');
+    var cp = box.querySelector('[data-share-copy]'), nat = box.querySelector('[data-share-native]');
+    var ok = box.querySelector('.share__ok');
+    if (wa) wa.href = 'https://wa.me/?text=' + encodeURIComponent(text + ' ' + url);
+    if (li) li.href = 'https://www.linkedin.com/sharing/share-offsite/?url=' + encodeURIComponent(url);
+    if (nat && navigator.share && !window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      nat.hidden = false;
+      nat.addEventListener('click', function () { navigator.share({ title: document.title, text: text, url: url }).catch(function () {}); });
+    }
+    if (cp) cp.addEventListener('click', function () {
+      function done() { if (ok) { ok.textContent = 'Link copiado'; setTimeout(function () { ok.textContent = ''; }, 2200); } }
+      if (navigator.clipboard) navigator.clipboard.writeText(url).then(done, function () { prompt('Copie o link:', url); });
+      else prompt('Copie o link:', url);
+    });
+  });
+
   // Copiar e-mail
   document.querySelectorAll('[data-copy]').forEach(function (b) {
     b.addEventListener('click', function () {
