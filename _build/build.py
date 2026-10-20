@@ -51,7 +51,7 @@ def head(title, desc, prefix, image=None, progress=False):
 <link rel="apple-touch-icon" href="{prefix}assets/apple-touch-icon.png">
 {FONT}
 <link rel="stylesheet" href="{prefix}assets/css/style.css?v={V}">
-<script>(function(){{var d=document.documentElement;d.classList.add('js');var t=null;try{{t=localStorage.getItem('tema')}}catch(e){{}}if(!t)t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';d.setAttribute('data-theme',t);document.querySelector('meta[name=theme-color]').setAttribute('content',t==='dark'?'#0e0f11':'#f3f4f5')}})()</script>
+<script>(function(){{var d=document.documentElement;d.classList.add('js');var t=null;try{{t=localStorage.getItem('tema')}}catch(e){{}}if(t!=='dark')t='light';d.setAttribute('data-theme',t);document.querySelector('meta[name=theme-color]').setAttribute('content',t==='dark'?'#0e0f11':'#f3f4f5')}})()</script>
 </head>
 <body>
 {bar}
