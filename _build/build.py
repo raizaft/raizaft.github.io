@@ -77,6 +77,7 @@ def foot(prefix, share=""):
   <a class="u" href="https://www.linkedin.com/in/raizatomazoni/" target="_blank" rel="noopener">linkedin.com/in/raizatomazoni</a>
 </div></footer>
 <script src="{prefix}assets/js/main.js?v={V}" defer></script>
+<script data-goatcounter="https://raizatomazoni.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
 </body>
 </html>
 """
