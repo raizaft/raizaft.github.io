@@ -7,7 +7,6 @@ from projects import PROJECTS, FEATURED, MORE
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 EMAIL = "ftraiza@gmail.com"
-WHATS = "https://wa.me/5583996488531"
 MEDIUM = "https://medium.com/@raizaft"
 
 FONT = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
@@ -229,7 +228,6 @@ def build_index():
   </div>
   <div class="contact__links" data-reveal>
     <a class="btn" href="https://www.linkedin.com/in/raizatomazoni/" target="_blank" rel="noopener">LinkedIn</a>
-    <a class="btn" href="{WHATS}" target="_blank" rel="noopener">WhatsApp</a>
   </div>
   <div class="contact__share" data-reveal>{share_html("Compartilhar portfólio", "Portfólio de Raiza Tomazoni, UX/UI e Product Designer")}</div>
 </div></section>
